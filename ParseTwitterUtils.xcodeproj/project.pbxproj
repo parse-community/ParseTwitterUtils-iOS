@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77DE89F60F51105C769BEC0B /* libPods-ParseTwitterUtils-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F31BB2625FB261014BCD4FB6 /* libPods-ParseTwitterUtils-Tests.a */; };
+		8135E4951B4B6A0E0092F452 /* PF_Twitter_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8135E48E1B4B6A0E0092F452 /* PF_Twitter_Private.h */; };
+		8135E4961B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8135E48F1B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h */; };
+		8135E4971B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8135E4901B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.m */; };
+		8135E4981B4B6A0E0092F452 /* PF_Twitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8135E4911B4B6A0E0092F452 /* PF_Twitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8135E4991B4B6A0E0092F452 /* PF_Twitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8135E4921B4B6A0E0092F452 /* PF_Twitter.m */; };
+		8135E49A1B4B6A0E0092F452 /* PFTwitterUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8135E4931B4B6A0E0092F452 /* PFTwitterUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8135E49B1B4B6A0E0092F452 /* PFTwitterUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8135E4941B4B6A0E0092F452 /* PFTwitterUtils.m */; };
+		813DFC931AB2515A00F25A08 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DFC921AB2515A00F25A08 /* Bolts.framework */; };
+		813DFC951AB251F700F25A08 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DFC941AB251F700F25A08 /* Parse.framework */; };
+		813DFC981AB2526000F25A08 /* third_party_licenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 813DFC971AB2526000F25A08 /* third_party_licenses.txt */; };
+		813E54A41BB5DDEF00C727E8 /* PFTwitterUtils_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 813E54A31BB5DDEF00C727E8 /* PFTwitterUtils_Private.h */; settings = {ASSET_TAGS = (); }; };
+		813E54A91BB5E5FA00C727E8 /* PFTwitterPrivateUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 813E54A61BB5E52000C727E8 /* PFTwitterPrivateUtilities.m */; settings = {ASSET_TAGS = (); }; };
+		813E54AA1BB5E5FF00C727E8 /* PFTwitterPrivateUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 813E54A51BB5E52000C727E8 /* PFTwitterPrivateUtilities.h */; settings = {ASSET_TAGS = (); }; };
+		815F18401B4B730E0066E996 /* PFOAuth1FlowDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 815F183E1B4B730E0066E996 /* PFOAuth1FlowDialog.h */; };
+		815F18411B4B730E0066E996 /* PFOAuth1FlowDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 815F183F1B4B730E0066E996 /* PFOAuth1FlowDialog.m */; };
+		81665C731BBDE27D00AE923F /* OAuth1FlowDialogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C6E1BBDE27D00AE923F /* OAuth1FlowDialogTests.m */; settings = {ASSET_TAGS = (); }; };
+		81665C741BBDE27D00AE923F /* OAuthCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C6F1BBDE27D00AE923F /* OAuthCoreTests.m */; settings = {ASSET_TAGS = (); }; };
+		81665C751BBDE27D00AE923F /* TwitterAuthenticationProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C701BBDE27D00AE923F /* TwitterAuthenticationProviderTests.m */; settings = {ASSET_TAGS = (); }; };
+		81665C761BBDE27D00AE923F /* TwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C711BBDE27D00AE923F /* TwitterTests.m */; settings = {ASSET_TAGS = (); }; };
+		81665C771BBDE27D00AE923F /* TwitterUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C721BBDE27D00AE923F /* TwitterUtilsTests.m */; settings = {ASSET_TAGS = (); }; };
+		81665C7C1BBDE2EE00AE923F /* PFTwitterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C7B1BBDE2EE00AE923F /* PFTwitterTestCase.m */; settings = {ASSET_TAGS = (); }; };
+		8166FB921B4F1DC5003841A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8166FB8F1B4F1DC5003841A2 /* main.m */; };
+		817A37CB1B4B741A00129AFA /* PF_OAuthCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 817A37C91B4B741A00129AFA /* PF_OAuthCore.h */; };
+		817A37CC1B4B741A00129AFA /* PF_OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 817A37CA1B4B741A00129AFA /* PF_OAuthCore.m */; };
+		819DAAD61BB5EC79002BDE2B /* PFTwitterAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DAAD41BB5EC79002BDE2B /* PFTwitterAlertView.h */; settings = {ASSET_TAGS = (); }; };
+		819DAAD71BB5EC79002BDE2B /* PFTwitterAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DAAD51BB5EC79002BDE2B /* PFTwitterAlertView.m */; settings = {ASSET_TAGS = (); }; };
+		81B3F22B1AC9CA5300A92677 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81B3F22A1AC9CA5300A92677 /* Localizable.strings */; };
+		81CB98CC1AB7905D00136FA5 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* ParseTwitterUtils.framework */; };
+		81CB98D81AB791FB00136FA5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DFC921AB2515A00F25A08 /* Bolts.framework */; };
+		81CB98DB1AB7920E00136FA5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DFC941AB251F700F25A08 /* Parse.framework */; };
+		81CB98DD1AB7921C00136FA5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CB98DC1AB7921C00136FA5 /* libsqlite3.dylib */; };
+		81CB98DF1AB7922600136FA5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CB98DE1AB7922600136FA5 /* AudioToolbox.framework */; };
+		81CB98E11AB7922C00136FA5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CB98E01AB7922C00136FA5 /* SystemConfiguration.framework */; };
+		81D342A11B4C7DA500B6C124 /* ParseTwitterUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D342A01B4C7DA500B6C124 /* ParseTwitterUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8166FB941B4F1E9A003841A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8166FB661B4F1D77003841A2;
+			remoteInfo = ParseTwitterTestApplication;
+		};
+		81CB98CD1AB7905D00136FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "ParseFacebookUtils_v4-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8135E48E1B4B6A0E0092F452 /* PF_Twitter_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PF_Twitter_Private.h; sourceTree = "<group>"; };
+		8135E48F1B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterAuthenticationProvider.h; sourceTree = "<group>"; };
+		8135E4901B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTwitterAuthenticationProvider.m; sourceTree = "<group>"; };
+		8135E4911B4B6A0E0092F452 /* PF_Twitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PF_Twitter.h; sourceTree = "<group>"; };
+		8135E4921B4B6A0E0092F452 /* PF_Twitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PF_Twitter.m; sourceTree = "<group>"; };
+		8135E4931B4B6A0E0092F452 /* PFTwitterUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterUtils.h; sourceTree = "<group>"; };
+		8135E4941B4B6A0E0092F452 /* PFTwitterUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTwitterUtils.m; sourceTree = "<group>"; };
+		813DFC921AB2515A00F25A08 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Vendor/Bolts.framework; sourceTree = "<group>"; };
+		813DFC941AB251F700F25A08 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		813DFC971AB2526000F25A08 /* third_party_licenses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = third_party_licenses.txt; sourceTree = SOURCE_ROOT; };
+		813E54A31BB5DDEF00C727E8 /* PFTwitterUtils_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterUtils_Private.h; sourceTree = "<group>"; };
+		813E54A51BB5E52000C727E8 /* PFTwitterPrivateUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterPrivateUtilities.h; sourceTree = "<group>"; };
+		813E54A61BB5E52000C727E8 /* PFTwitterPrivateUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTwitterPrivateUtilities.m; sourceTree = "<group>"; };
+		815F183E1B4B730E0066E996 /* PFOAuth1FlowDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFOAuth1FlowDialog.h; sourceTree = "<group>"; };
+		815F183F1B4B730E0066E996 /* PFOAuth1FlowDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFOAuth1FlowDialog.m; sourceTree = "<group>"; };
+		81665C6E1BBDE27D00AE923F /* OAuth1FlowDialogTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuth1FlowDialogTests.m; sourceTree = "<group>"; };
+		81665C6F1BBDE27D00AE923F /* OAuthCoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthCoreTests.m; sourceTree = "<group>"; };
+		81665C701BBDE27D00AE923F /* TwitterAuthenticationProviderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthenticationProviderTests.m; sourceTree = "<group>"; };
+		81665C711BBDE27D00AE923F /* TwitterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTests.m; sourceTree = "<group>"; };
+		81665C721BBDE27D00AE923F /* TwitterUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterUtilsTests.m; sourceTree = "<group>"; };
+		81665C7A1BBDE2EE00AE923F /* PFTwitterTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterTestCase.h; sourceTree = "<group>"; };
+		81665C7B1BBDE2EE00AE923F /* PFTwitterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTwitterTestCase.m; sourceTree = "<group>"; };
+		8166FB671B4F1D77003841A2 /* ParseTwitterTestApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseTwitterTestApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8166FB8F1B4F1DC5003841A2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8166FB911B4F1DC5003841A2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8178BEB21B716EB900051CF4 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		8178BEB41B716EB900051CF4 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		8178BEB51B716EB900051CF4 /* OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OSX.xcconfig; sourceTree = "<group>"; };
+		8178BEB71B716EB900051CF4 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		8178BEB81B716EB900051CF4 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		8178BEB91B716EB900051CF4 /* UnitTest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UnitTest.xcconfig; sourceTree = "<group>"; };
+		8178BEBB1B716EB900051CF4 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		8178BEBC1B716EB900051CF4 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		8178BEBE1B716EB900051CF4 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		817A37C91B4B741A00129AFA /* PF_OAuthCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PF_OAuthCore.h; sourceTree = "<group>"; };
+		817A37CA1B4B741A00129AFA /* PF_OAuthCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PF_OAuthCore.m; sourceTree = "<group>"; };
+		81930A391BBDE76E00A5E4BB /* PFTwitterTestMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFTwitterTestMacros.h; sourceTree = "<group>"; };
+		819DAAD41BB5EC79002BDE2B /* PFTwitterAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterAlertView.h; sourceTree = "<group>"; };
+		819DAAD51BB5EC79002BDE2B /* PFTwitterAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTwitterAlertView.m; sourceTree = "<group>"; };
+		81B3F22A1AC9CA5300A92677 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Resources/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		81CB98C61AB7905D00136FA5 /* ParseTwitterUtils-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParseTwitterUtils-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81CB98D31AB7906D00136FA5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Resources/Info.plist; sourceTree = "<group>"; };
+		81CB98DC1AB7921C00136FA5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.2.sdk/usr/lib/libsqlite3.dylib; sourceTree = DEVELOPER_DIR; };
+		81CB98DE1AB7922600136FA5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.2.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		81CB98E01AB7922C00136FA5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		81D342A01B4C7DA500B6C124 /* ParseTwitterUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseTwitterUtils.h; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseTwitterUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31BB2625FB261014BCD4FB6 /* libPods-ParseTwitterUtils-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParseTwitterUtils-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51535531B57453700C49F56 /* ParseTwitterUtils-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ParseTwitterUtils-iOS.xcconfig"; sourceTree = "<group>"; };
+		F51535541B57454500C49F56 /* ParseTwitterUtils-Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ParseTwitterUtils-Tests.xcconfig"; sourceTree = "<group>"; };
+		F51535551B57455200C49F56 /* ParseTwitterTestApplication.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ParseTwitterTestApplication.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8166FB641B4F1D77003841A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81CB98C31AB7905D00136FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81CB98E11AB7922C00136FA5 /* SystemConfiguration.framework in Frameworks */,
+				81CB98DF1AB7922600136FA5 /* AudioToolbox.framework in Frameworks */,
+				81CB98DD1AB7921C00136FA5 /* libsqlite3.dylib in Frameworks */,
+				81CB98CC1AB7905D00136FA5 /* ParseTwitterUtils.framework in Frameworks */,
+				81CB98D81AB791FB00136FA5 /* Bolts.framework in Frameworks */,
+				81CB98DB1AB7920E00136FA5 /* Parse.framework in Frameworks */,
+				77DE89F60F51105C769BEC0B /* libPods-ParseTwitterUtils-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813DFC951AB251F700F25A08 /* Parse.framework in Frameworks */,
+				813DFC931AB2515A00F25A08 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* ParseTwitterUtils.framework */,
+				81CB98C61AB7905D00136FA5 /* ParseTwitterUtils-Tests.xctest */,
+				8166FB671B4F1D77003841A2 /* ParseTwitterTestApplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Breakpad */ = {
+			isa = PBXGroup;
+			children = (
+				F51535381B57451200C49F56 /* Configurations */,
+				8135E48C1B4B6A0E0092F452 /* ParseTwitterUtils */,
+				813DFC961AB2524C00F25A08 /* Resources */,
+				81CB98D21AB7906D00136FA5 /* Tests */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				6ADED1B195979E68C4289C24 /* Pods */,
+			);
+			indentWidth = 4;
+			name = Breakpad;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				813DFC8F1AB2513D00F25A08 /* User Frameworks */,
+				813DFC8E1AB2513300F25A08 /* System Frameworks */,
+				F31BB2625FB261014BCD4FB6 /* libPods-ParseTwitterUtils-Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6ADED1B195979E68C4289C24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8135E48C1B4B6A0E0092F452 /* ParseTwitterUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8135E48D1B4B6A0E0092F452 /* Internal */,
+				81D342A01B4C7DA500B6C124 /* ParseTwitterUtils.h */,
+				8135E4931B4B6A0E0092F452 /* PFTwitterUtils.h */,
+				8135E4941B4B6A0E0092F452 /* PFTwitterUtils.m */,
+				8135E4911B4B6A0E0092F452 /* PF_Twitter.h */,
+				8135E4921B4B6A0E0092F452 /* PF_Twitter.m */,
+			);
+			path = ParseTwitterUtils;
+			sourceTree = "<group>";
+		};
+		8135E48D1B4B6A0E0092F452 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				815F183D1B4B730E0066E996 /* Dialog */,
+				817A37C81B4B741A00129AFA /* OAuthCore */,
+				8135E48E1B4B6A0E0092F452 /* PF_Twitter_Private.h */,
+				813E54A31BB5DDEF00C727E8 /* PFTwitterUtils_Private.h */,
+				8135E48F1B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h */,
+				8135E4901B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.m */,
+				813E54A51BB5E52000C727E8 /* PFTwitterPrivateUtilities.h */,
+				813E54A61BB5E52000C727E8 /* PFTwitterPrivateUtilities.m */,
+				819DAAD41BB5EC79002BDE2B /* PFTwitterAlertView.h */,
+				819DAAD51BB5EC79002BDE2B /* PFTwitterAlertView.m */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		813DFC8E1AB2513300F25A08 /* System Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81CB98E01AB7922C00136FA5 /* SystemConfiguration.framework */,
+				81CB98DE1AB7922600136FA5 /* AudioToolbox.framework */,
+				81CB98DC1AB7921C00136FA5 /* libsqlite3.dylib */,
+			);
+			name = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		813DFC8F1AB2513D00F25A08 /* User Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				813DFC941AB251F700F25A08 /* Parse.framework */,
+				813DFC921AB2515A00F25A08 /* Bolts.framework */,
+			);
+			name = "User Frameworks";
+			sourceTree = "<group>";
+		};
+		813DFC961AB2524C00F25A08 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81B3F22A1AC9CA5300A92677 /* Localizable.strings */,
+				813DFC971AB2526000F25A08 /* third_party_licenses.txt */,
+			);
+			name = Resources;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		815F183D1B4B730E0066E996 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				815F183E1B4B730E0066E996 /* PFOAuth1FlowDialog.h */,
+				815F183F1B4B730E0066E996 /* PFOAuth1FlowDialog.m */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		81665C6D1BBDE27D00AE923F /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				81665C6E1BBDE27D00AE923F /* OAuth1FlowDialogTests.m */,
+				81665C6F1BBDE27D00AE923F /* OAuthCoreTests.m */,
+				81665C701BBDE27D00AE923F /* TwitterAuthenticationProviderTests.m */,
+				81665C711BBDE27D00AE923F /* TwitterTests.m */,
+				81665C721BBDE27D00AE923F /* TwitterUtilsTests.m */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		81665C781BBDE2C000AE923F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				81665C791BBDE2EE00AE923F /* TestCase */,
+				81930A391BBDE76E00A5E4BB /* PFTwitterTestMacros.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		81665C791BBDE2EE00AE923F /* TestCase */ = {
+			isa = PBXGroup;
+			children = (
+				81665C7A1BBDE2EE00AE923F /* PFTwitterTestCase.h */,
+				81665C7B1BBDE2EE00AE923F /* PFTwitterTestCase.m */,
+			);
+			path = TestCase;
+			sourceTree = "<group>";
+		};
+		8166FB8D1B4F1DC5003841A2 /* TestApplication */ = {
+			isa = PBXGroup;
+			children = (
+				8166FB8E1B4F1DC5003841A2 /* Classes */,
+				8166FB901B4F1DC5003841A2 /* Resources */,
+			);
+			path = TestApplication;
+			sourceTree = "<group>";
+		};
+		8166FB8E1B4F1DC5003841A2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8166FB8F1B4F1DC5003841A2 /* main.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8166FB901B4F1DC5003841A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8166FB911B4F1DC5003841A2 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8178BEB11B716EB900051CF4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8178BEB21B716EB900051CF4 /* Common.xcconfig */,
+				8178BEB31B716EB900051CF4 /* Platform */,
+				8178BEB61B716EB900051CF4 /* Product */,
+				8178BEBA1B716EB900051CF4 /* Project */,
+				8178BEBE1B716EB900051CF4 /* Warnings.xcconfig */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8178BEB31B716EB900051CF4 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				8178BEB41B716EB900051CF4 /* iOS.xcconfig */,
+				8178BEB51B716EB900051CF4 /* OSX.xcconfig */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		8178BEB61B716EB900051CF4 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				8178BEB71B716EB900051CF4 /* Application.xcconfig */,
+				8178BEB81B716EB900051CF4 /* Framework.xcconfig */,
+				8178BEB91B716EB900051CF4 /* UnitTest.xcconfig */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		8178BEBA1B716EB900051CF4 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				8178BEBB1B716EB900051CF4 /* Debug.xcconfig */,
+				8178BEBC1B716EB900051CF4 /* Release.xcconfig */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		817A37C81B4B741A00129AFA /* OAuthCore */ = {
+			isa = PBXGroup;
+			children = (
+				817A37C91B4B741A00129AFA /* PF_OAuthCore.h */,
+				817A37CA1B4B741A00129AFA /* PF_OAuthCore.m */,
+			);
+			path = OAuthCore;
+			sourceTree = "<group>";
+		};
+		81CB98D21AB7906D00136FA5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				81665C6D1BBDE27D00AE923F /* Unit */,
+				81665C781BBDE2C000AE923F /* Other */,
+				81CB98D71AB7907500136FA5 /* Resources */,
+				8166FB8D1B4F1DC5003841A2 /* TestApplication */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		81CB98D71AB7907500136FA5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81CB98D31AB7906D00136FA5 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F51535381B57451200C49F56 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				8178BEB11B716EB900051CF4 /* Shared */,
+				F51535531B57453700C49F56 /* ParseTwitterUtils-iOS.xcconfig */,
+				F51535541B57454500C49F56 /* ParseTwitterUtils-Tests.xcconfig */,
+				F51535551B57455200C49F56 /* ParseTwitterTestApplication.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				815F18401B4B730E0066E996 /* PFOAuth1FlowDialog.h in Headers */,
+				817A37CB1B4B741A00129AFA /* PF_OAuthCore.h in Headers */,
+				813E54A41BB5DDEF00C727E8 /* PFTwitterUtils_Private.h in Headers */,
+				81D342A11B4C7DA500B6C124 /* ParseTwitterUtils.h in Headers */,
+				813E54AA1BB5E5FF00C727E8 /* PFTwitterPrivateUtilities.h in Headers */,
+				8135E49A1B4B6A0E0092F452 /* PFTwitterUtils.h in Headers */,
+				8135E4951B4B6A0E0092F452 /* PF_Twitter_Private.h in Headers */,
+				8135E4961B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h in Headers */,
+				819DAAD61BB5EC79002BDE2B /* PFTwitterAlertView.h in Headers */,
+				8135E4981B4B6A0E0092F452 /* PF_Twitter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8166FB661B4F1D77003841A2 /* ParseTwitterTestApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8166FB8B1B4F1D77003841A2 /* Build configuration list for PBXNativeTarget "ParseTwitterTestApplication" */;
+			buildPhases = (
+				8166FB631B4F1D77003841A2 /* Sources */,
+				8166FB641B4F1D77003841A2 /* Frameworks */,
+				8166FB651B4F1D77003841A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParseTwitterTestApplication;
+			productName = ParseTwitterTestApplication;
+			productReference = 8166FB671B4F1D77003841A2 /* ParseTwitterTestApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81CB98C51AB7905D00136FA5 /* ParseTwitterUtils-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81CB98D11AB7905D00136FA5 /* Build configuration list for PBXNativeTarget "ParseTwitterUtils-Tests" */;
+			buildPhases = (
+				26730F125F6A472AD0747C6D /* Check Pods Manifest.lock */,
+				81CB98C21AB7905D00136FA5 /* Sources */,
+				81CB98C31AB7905D00136FA5 /* Frameworks */,
+				81CB98C41AB7905D00136FA5 /* Resources */,
+				4D5B07C5EAC8A041D08E10C6 /* Embed Pods Frameworks */,
+				7A5233E6AC771DC4EC9B4146 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81CB98CE1AB7905D00136FA5 /* PBXTargetDependency */,
+				8166FB951B4F1E9A003841A2 /* PBXTargetDependency */,
+			);
+			name = "ParseTwitterUtils-Tests";
+			productName = "ParseFacebookUtilsV4-Tests";
+			productReference = 81CB98C61AB7905D00136FA5 /* ParseTwitterUtils-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2AAC07D0554694100DB518D /* ParseTwitterUtils-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ParseTwitterUtils-iOS" */;
+			buildPhases = (
+				81F035F41BC311FA0055BFDE /* Fetch latest Parse.framework */,
+				81B3F2291AC9CA2600A92677 /* Generate Localizable Strings */,
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+				8139B1341A7BF6B5002BEF84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ParseTwitterUtils-iOS";
+			productName = Breakpad;
+			productReference = D2AAC07E0554694100DB518D /* ParseTwitterUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PF;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Parse, LLC";
+				TargetAttributes = {
+					8166FB661B4F1D77003841A2 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					81CB98C51AB7905D00136FA5 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 8166FB661B4F1D77003841A2;
+					};
+				};
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ParseTwitterUtils" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				da,
+				de,
+				es,
+				fr,
+				it,
+				ja,
+				nl,
+				no,
+				sl,
+				sv,
+				tr,
+				en,
+				Base,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Breakpad */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* ParseTwitterUtils-iOS */,
+				81CB98C51AB7905D00136FA5 /* ParseTwitterUtils-Tests */,
+				8166FB661B4F1D77003841A2 /* ParseTwitterTestApplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8139B1341A7BF6B5002BEF84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813DFC981AB2526000F25A08 /* third_party_licenses.txt in Resources */,
+				81B3F22B1AC9CA5300A92677 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8166FB651B4F1D77003841A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81CB98C41AB7905D00136FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26730F125F6A472AD0747C6D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D5B07C5EAC8A041D08E10C6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseTwitterUtils-Tests/Pods-ParseTwitterUtils-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A5233E6AC771DC4EC9B4146 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseTwitterUtils-Tests/Pods-ParseTwitterUtils-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81B3F2291AC9CA2600A92677 /* Generate Localizable Strings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Localizable Strings";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Generate localizable strings\nfind $PROJECT_DIR -name '*.m' -print0 | xargs -0 genstrings -q -o $PROJECT_DIR/Resources\necho \"Finished converting images\"";
+		};
+		81F035F41BC311FA0055BFDE /* Fetch latest Parse.framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fetch latest Parse.framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -d $SRCROOT/Vendor ]; then\n  mkdir $SRCROOT/Vendor\nfi\n\ncd $SRCROOT/Vendor\n\nif [[ ! -d \"Parse.framework\" || ! -d \"Bolts.framework\" ]]; then\n  ARCHIVE_NAME=Parse-iOS.zip\n\n  LATEST_TAG=$(bash -l -c \"bundle exec pod spec cat Parse\" | grep version | head -n 1 | cut -d '\"' -f 4)\n  ARCHIVE_URL=\"https://github.com/ParsePlatform/Parse-SDK-iOS-OSX/releases/download/${LATEST_TAG}/${ARCHIVE_NAME}\"\n  curl -O -L $ARCHIVE_URL\n\n  unzip $ARCHIVE_NAME\n  rm $ARCHIVE_NAME\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8166FB631B4F1D77003841A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8166FB921B4F1DC5003841A2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81CB98C21AB7905D00136FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81665C751BBDE27D00AE923F /* TwitterAuthenticationProviderTests.m in Sources */,
+				81665C741BBDE27D00AE923F /* OAuthCoreTests.m in Sources */,
+				81665C731BBDE27D00AE923F /* OAuth1FlowDialogTests.m in Sources */,
+				81665C771BBDE27D00AE923F /* TwitterUtilsTests.m in Sources */,
+				81665C761BBDE27D00AE923F /* TwitterTests.m in Sources */,
+				81665C7C1BBDE2EE00AE923F /* PFTwitterTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8135E4971B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.m in Sources */,
+				8135E49B1B4B6A0E0092F452 /* PFTwitterUtils.m in Sources */,
+				8135E4991B4B6A0E0092F452 /* PF_Twitter.m in Sources */,
+				815F18411B4B730E0066E996 /* PFOAuth1FlowDialog.m in Sources */,
+				813E54A91BB5E5FA00C727E8 /* PFTwitterPrivateUtilities.m in Sources */,
+				817A37CC1B4B741A00129AFA /* PF_OAuthCore.m in Sources */,
+				819DAAD71BB5EC79002BDE2B /* PFTwitterAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8166FB951B4F1E9A003841A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8166FB661B4F1D77003841A2 /* ParseTwitterTestApplication */;
+			targetProxy = 8166FB941B4F1E9A003841A2 /* PBXContainerItemProxy */;
+		};
+		81CB98CE1AB7905D00136FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* ParseTwitterUtils-iOS */;
+			targetProxy = 81CB98CD1AB7905D00136FA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51535531B57453700C49F56 /* ParseTwitterUtils-iOS.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51535531B57453700C49F56 /* ParseTwitterUtils-iOS.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8178BEBB1B716EB900051CF4 /* Debug.xcconfig */;
+			buildSettings = {
+				PARSE_DIR = "$(PROJECT_DIR)/..";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8178BEBC1B716EB900051CF4 /* Release.xcconfig */;
+			buildSettings = {
+				PARSE_DIR = "$(PROJECT_DIR)/..";
+			};
+			name = Release;
+		};
+		8166FB871B4F1D77003841A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51535551B57455200C49F56 /* ParseTwitterTestApplication.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		8166FB881B4F1D77003841A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51535551B57455200C49F56 /* ParseTwitterTestApplication.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		81CB98CF1AB7905D00136FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51535541B57454500C49F56 /* ParseTwitterUtils-Tests.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+			};
+			name = Debug;
+		};
+		81CB98D01AB7905D00136FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51535541B57454500C49F56 /* ParseTwitterUtils-Tests.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ParseTwitterUtils-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ParseTwitterUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8166FB8B1B4F1D77003841A2 /* Build configuration list for PBXNativeTarget "ParseTwitterTestApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8166FB871B4F1D77003841A2 /* Debug */,
+				8166FB881B4F1D77003841A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81CB98D11AB7905D00136FA5 /* Build configuration list for PBXNativeTarget "ParseTwitterUtils-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81CB98CF1AB7905D00136FA5 /* Debug */,
+				81CB98D01AB7905D00136FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
