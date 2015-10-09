@@ -17,4 +17,6 @@ Pods
 
 DerivedData
 build
-Vendor/
+
+Vendor/Parse.framework
+Vendor/Bolts.framework
