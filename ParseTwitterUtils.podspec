@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'ParseTwitterUtils/*.h'
   s.source_files = 'ParseTwitterUtils/**/*.{h,m}'
+  s.resources = 'Resources/en.lproj'
   
   s.frameworks        = 'AudioToolbox',
                         'CFNetwork',

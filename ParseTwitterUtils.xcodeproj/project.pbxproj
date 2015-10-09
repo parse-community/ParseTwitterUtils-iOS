@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06D00BAB1BC78F23005BAA6F /* ParseTwitterUtils.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06D00BAD1BC78F23005BAA6F /* ParseTwitterUtils.strings */; };
+		06D00BB51BC790F3005BAA6F /* PFTwitterLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D00BB41BC790F3005BAA6F /* PFTwitterLocalization.h */; settings = {ASSET_TAGS = (); }; };
 		77DE89F60F51105C769BEC0B /* libPods-ParseTwitterUtils-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F31BB2625FB261014BCD4FB6 /* libPods-ParseTwitterUtils-Tests.a */; };
 		8135E4951B4B6A0E0092F452 /* PF_Twitter_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8135E48E1B4B6A0E0092F452 /* PF_Twitter_Private.h */; };
 		8135E4961B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8135E48F1B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h */; };
@@ -34,7 +36,6 @@
 		817A37CC1B4B741A00129AFA /* PF_OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 817A37CA1B4B741A00129AFA /* PF_OAuthCore.m */; };
 		819DAAD61BB5EC79002BDE2B /* PFTwitterAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DAAD41BB5EC79002BDE2B /* PFTwitterAlertView.h */; settings = {ASSET_TAGS = (); }; };
 		819DAAD71BB5EC79002BDE2B /* PFTwitterAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DAAD51BB5EC79002BDE2B /* PFTwitterAlertView.m */; settings = {ASSET_TAGS = (); }; };
-		81B3F22B1AC9CA5300A92677 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81B3F22A1AC9CA5300A92677 /* Localizable.strings */; };
 		81CB98CC1AB7905D00136FA5 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* ParseTwitterUtils.framework */; };
 		81CB98D81AB791FB00136FA5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DFC921AB2515A00F25A08 /* Bolts.framework */; };
 		81CB98DB1AB7920E00136FA5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DFC941AB251F700F25A08 /* Parse.framework */; };
@@ -62,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06D00BAE1BC78F29005BAA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ParseTwitterUtils.strings; sourceTree = "<group>"; };
+		06D00BB41BC790F3005BAA6F /* PFTwitterLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterLocalization.h; sourceTree = "<group>"; };
 		8135E48E1B4B6A0E0092F452 /* PF_Twitter_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PF_Twitter_Private.h; sourceTree = "<group>"; };
 		8135E48F1B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterAuthenticationProvider.h; sourceTree = "<group>"; };
 		8135E4901B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTwitterAuthenticationProvider.m; sourceTree = "<group>"; };
@@ -101,7 +104,6 @@
 		81930A391BBDE76E00A5E4BB /* PFTwitterTestMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFTwitterTestMacros.h; sourceTree = "<group>"; };
 		819DAAD41BB5EC79002BDE2B /* PFTwitterAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterAlertView.h; sourceTree = "<group>"; };
 		819DAAD51BB5EC79002BDE2B /* PFTwitterAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTwitterAlertView.m; sourceTree = "<group>"; };
-		81B3F22A1AC9CA5300A92677 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Resources/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		81CB98C61AB7905D00136FA5 /* ParseTwitterUtils-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParseTwitterUtils-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CB98D31AB7906D00136FA5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Resources/Info.plist; sourceTree = "<group>"; };
 		81CB98DC1AB7921C00136FA5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.2.sdk/usr/lib/libsqlite3.dylib; sourceTree = DEVELOPER_DIR; };
@@ -217,6 +219,7 @@
 				813E54A61BB5E52000C727E8 /* PFTwitterPrivateUtilities.m */,
 				819DAAD41BB5EC79002BDE2B /* PFTwitterAlertView.h */,
 				819DAAD51BB5EC79002BDE2B /* PFTwitterAlertView.m */,
+				06D00BB41BC790F3005BAA6F /* PFTwitterLocalization.h */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -243,8 +246,8 @@
 		813DFC961AB2524C00F25A08 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				81B3F22A1AC9CA5300A92677 /* Localizable.strings */,
 				813DFC971AB2526000F25A08 /* third_party_licenses.txt */,
+				06D00BAD1BC78F23005BAA6F /* ParseTwitterUtils.strings */,
 			);
 			name = Resources;
 			path = Classes;
@@ -406,6 +409,7 @@
 				81D342A11B4C7DA500B6C124 /* ParseTwitterUtils.h in Headers */,
 				813E54AA1BB5E5FF00C727E8 /* PFTwitterPrivateUtilities.h in Headers */,
 				8135E49A1B4B6A0E0092F452 /* PFTwitterUtils.h in Headers */,
+				06D00BB51BC790F3005BAA6F /* PFTwitterLocalization.h in Headers */,
 				8135E4951B4B6A0E0092F452 /* PF_Twitter_Private.h in Headers */,
 				8135E4961B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h in Headers */,
 				819DAAD61BB5EC79002BDE2B /* PFTwitterAlertView.h in Headers */,
@@ -499,23 +503,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
-				da,
-				de,
-				es,
-				fr,
-				it,
-				ja,
-				nl,
-				no,
-				sl,
-				sv,
-				tr,
 				en,
-				Base,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* Breakpad */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -535,7 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				813DFC981AB2526000F25A08 /* third_party_licenses.txt in Resources */,
-				81B3F22B1AC9CA5300A92677 /* Localizable.strings in Resources */,
+				06D00BAB1BC78F23005BAA6F /* ParseTwitterUtils.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,7 +601,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Generate localizable strings\nfind $PROJECT_DIR -name '*.m' -print0 | xargs -0 genstrings -q -o $PROJECT_DIR/Resources\necho \"Finished converting images\"";
+			shellScript = "# Generate localizable strings\nLOCALIZATION_FOLDER=$PROJECT_DIR/Resources/en.lproj\nLOCALIZATION_MACRO=PFTWLocalizedString\n\nfind $PROJECT_DIR/ParseTwitterUtils -name '*.m' -print0 | xargs -0 xcrun extractLocStrings -s $LOCALIZATION_MACRO -q -o $LOCALIZATION_FOLDER\n\nmv $LOCALIZATION_FOLDER/Localizable.strings $LOCALIZATION_FOLDER/ParseTwitterUtils.strings\n";
+			showEnvVarsInLog = 0;
 		};
 		81F035F41BC311FA0055BFDE /* Fetch latest Parse.framework */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -682,6 +671,18 @@
 			targetProxy = 81CB98CD1AB7905D00136FA5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06D00BAD1BC78F23005BAA6F /* ParseTwitterUtils.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06D00BAE1BC78F29005BAA6F /* en */,
+			);
+			name = ParseTwitterUtils.strings;
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
