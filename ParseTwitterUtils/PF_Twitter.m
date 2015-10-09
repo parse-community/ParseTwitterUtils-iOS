@@ -23,6 +23,7 @@
 #import "PFTwitterAlertView.h"
 #import "PFTwitterPrivateUtilities.h"
 #import "PF_OAuthCore.h"
+#import "PFTwitterLocalization.h"
 
 @implementation PF_Twitter
 
@@ -409,9 +410,9 @@
 
         // Call async on the main thread, as the completion isn't executed on the main thread
         dispatch_async(dispatch_get_main_queue(), ^{
-            [PFTwitterAlertView showAlertWithTitle:NSLocalizedString(@"Select a Twitter Account", @"Select a Twitter Account")
+            [PFTwitterAlertView showAlertWithTitle:PFTWLocalizedString(@"Select a Twitter Account", @"Select a Twitter Account")
                                            message:nil
-                                 cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
+                                 cancelButtonTitle:PFTWLocalizedString(@"Cancel", @"Cancel")
                                  otherButtonTitles:usernames
                                         completion:^(NSUInteger buttonIndex) {
                                             if (buttonIndex == NSNotFound) {
