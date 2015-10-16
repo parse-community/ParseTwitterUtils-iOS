@@ -11,8 +11,7 @@
 #import "PFTwitterUtils_Private.h"
 #import "PF_Twitter.h"
 
-@import Parse.PFUser;
-@import Parse.PFUserAuthenticationDelegate;
+@import Parse;
 
 ///--------------------------------------
 #pragma mark - Tests
@@ -39,6 +38,10 @@
 ///--------------------------------------
 
 - (void)testInitialize {
+    id parseMock = PFStrictClassMock([Parse class]);
+    OCMStub([parseMock getApplicationId]).andReturn(@"yolo");
+    OCMStub([parseMock getClientKey]).andReturn(@"yarr");
+
     id userMock = PFStrictClassMock([PFUser class]);
     OCMExpect(ClassMethod([userMock registerAuthenticationDelegate:[OCMArg checkWithBlock:^BOOL(id obj) {
         return (obj != nil);
@@ -53,6 +56,10 @@
 }
 
 - (void)testInitializeTwice {
+    id parseMock = PFStrictClassMock([Parse class]);
+    OCMStub([parseMock getApplicationId]).andReturn(@"yolo");
+    OCMStub([parseMock getClientKey]).andReturn(@"yarr");
+
     id userMock = PFStrictClassMock([PFUser class]);
 
     [PFTwitterUtils initializeWithConsumerKey:@"a" consumerSecret:@"b"];
@@ -66,6 +73,10 @@
     XCTAssertEqualObjects([PFTwitterUtils twitter].consumerSecret, @"b");
 
     OCMVerifyAll(userMock);
+}
+
+- (void)testInitializeRequiresParseInitialize {
+    PFAssertThrowsInconsistencyException([PFTwitterUtils initializeWithConsumerKey:@"a" consumerSecret:@"b"]);
 }
 
 @end
