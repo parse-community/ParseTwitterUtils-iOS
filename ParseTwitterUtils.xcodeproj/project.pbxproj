@@ -65,6 +65,17 @@
 /* Begin PBXFileReference section */
 		06D00BAE1BC78F29005BAA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ParseTwitterUtils.strings; sourceTree = "<group>"; };
 		06D00BB41BC790F3005BAA6F /* PFTwitterLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterLocalization.h; sourceTree = "<group>"; };
+		06DD47201BD0C64500A43759 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		06DD47221BD0C64500A43759 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		06DD47231BD0C64500A43759 /* OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OSX.xcconfig; sourceTree = "<group>"; };
+		06DD47241BD0C64500A43759 /* tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = tvOS.xcconfig; sourceTree = "<group>"; };
+		06DD47251BD0C64500A43759 /* watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = watchOS.xcconfig; sourceTree = "<group>"; };
+		06DD47271BD0C64500A43759 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		06DD47281BD0C64500A43759 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		06DD47291BD0C64500A43759 /* UnitTest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UnitTest.xcconfig; sourceTree = "<group>"; };
+		06DD472B1BD0C64500A43759 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		06DD472C1BD0C64500A43759 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		06DD472D1BD0C64500A43759 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		8135E48E1B4B6A0E0092F452 /* PF_Twitter_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PF_Twitter_Private.h; sourceTree = "<group>"; };
 		8135E48F1B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterAuthenticationProvider.h; sourceTree = "<group>"; };
 		8135E4901B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTwitterAuthenticationProvider.m; sourceTree = "<group>"; };
@@ -90,15 +101,6 @@
 		8166FB671B4F1D77003841A2 /* ParseTwitterTestApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseTwitterTestApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8166FB8F1B4F1DC5003841A2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8166FB911B4F1DC5003841A2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8178BEB21B716EB900051CF4 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
-		8178BEB41B716EB900051CF4 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
-		8178BEB51B716EB900051CF4 /* OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OSX.xcconfig; sourceTree = "<group>"; };
-		8178BEB71B716EB900051CF4 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
-		8178BEB81B716EB900051CF4 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
-		8178BEB91B716EB900051CF4 /* UnitTest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UnitTest.xcconfig; sourceTree = "<group>"; };
-		8178BEBB1B716EB900051CF4 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		8178BEBC1B716EB900051CF4 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		8178BEBE1B716EB900051CF4 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		817A37C91B4B741A00129AFA /* PF_OAuthCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PF_OAuthCore.h; sourceTree = "<group>"; };
 		817A37CA1B4B741A00129AFA /* PF_OAuthCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PF_OAuthCore.m; sourceTree = "<group>"; };
 		81930A391BBDE76E00A5E4BB /* PFTwitterTestMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFTwitterTestMacros.h; sourceTree = "<group>"; };
@@ -159,6 +161,48 @@
 				8166FB671B4F1D77003841A2 /* ParseTwitterTestApplication.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		06DD471F1BD0C64500A43759 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				06DD47201BD0C64500A43759 /* Common.xcconfig */,
+				06DD47211BD0C64500A43759 /* Platform */,
+				06DD47261BD0C64500A43759 /* Product */,
+				06DD472A1BD0C64500A43759 /* Project */,
+				06DD472D1BD0C64500A43759 /* Warnings.xcconfig */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		06DD47211BD0C64500A43759 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				06DD47221BD0C64500A43759 /* iOS.xcconfig */,
+				06DD47231BD0C64500A43759 /* OSX.xcconfig */,
+				06DD47241BD0C64500A43759 /* tvOS.xcconfig */,
+				06DD47251BD0C64500A43759 /* watchOS.xcconfig */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		06DD47261BD0C64500A43759 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				06DD47271BD0C64500A43759 /* Application.xcconfig */,
+				06DD47281BD0C64500A43759 /* Framework.xcconfig */,
+				06DD47291BD0C64500A43759 /* UnitTest.xcconfig */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		06DD472A1BD0C64500A43759 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				06DD472B1BD0C64500A43759 /* Debug.xcconfig */,
+				06DD472C1BD0C64500A43759 /* Release.xcconfig */,
+			);
+			path = Project;
 			sourceTree = "<group>";
 		};
 		0867D691FE84028FC02AAC07 /* Breakpad */ = {
@@ -317,46 +361,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		8178BEB11B716EB900051CF4 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				8178BEB21B716EB900051CF4 /* Common.xcconfig */,
-				8178BEB31B716EB900051CF4 /* Platform */,
-				8178BEB61B716EB900051CF4 /* Product */,
-				8178BEBA1B716EB900051CF4 /* Project */,
-				8178BEBE1B716EB900051CF4 /* Warnings.xcconfig */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		8178BEB31B716EB900051CF4 /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				8178BEB41B716EB900051CF4 /* iOS.xcconfig */,
-				8178BEB51B716EB900051CF4 /* OSX.xcconfig */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		8178BEB61B716EB900051CF4 /* Product */ = {
-			isa = PBXGroup;
-			children = (
-				8178BEB71B716EB900051CF4 /* Application.xcconfig */,
-				8178BEB81B716EB900051CF4 /* Framework.xcconfig */,
-				8178BEB91B716EB900051CF4 /* UnitTest.xcconfig */,
-			);
-			path = Product;
-			sourceTree = "<group>";
-		};
-		8178BEBA1B716EB900051CF4 /* Project */ = {
-			isa = PBXGroup;
-			children = (
-				8178BEBB1B716EB900051CF4 /* Debug.xcconfig */,
-				8178BEBC1B716EB900051CF4 /* Release.xcconfig */,
-			);
-			path = Project;
-			sourceTree = "<group>";
-		};
 		817A37C81B4B741A00129AFA /* OAuthCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,7 +392,7 @@
 		F51535381B57451200C49F56 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				8178BEB11B716EB900051CF4 /* Shared */,
+				06DD471F1BD0C64500A43759 /* Shared */,
 				F51535531B57453700C49F56 /* ParseTwitterUtils-iOS.xcconfig */,
 				F51535541B57454500C49F56 /* ParseTwitterUtils-Tests.xcconfig */,
 				F51535551B57455200C49F56 /* ParseTwitterTestApplication.xcconfig */,
@@ -701,7 +705,7 @@
 		};
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8178BEBB1B716EB900051CF4 /* Debug.xcconfig */;
+			baseConfigurationReference = 06DD472B1BD0C64500A43759 /* Debug.xcconfig */;
 			buildSettings = {
 				PARSE_DIR = "$(PROJECT_DIR)/..";
 			};
@@ -709,7 +713,7 @@
 		};
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8178BEBC1B716EB900051CF4 /* Release.xcconfig */;
+			baseConfigurationReference = 06DD472C1BD0C64500A43759 /* Release.xcconfig */;
 			buildSettings = {
 				PARSE_DIR = "$(PROJECT_DIR)/..";
 			};
