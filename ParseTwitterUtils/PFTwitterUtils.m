@@ -12,6 +12,8 @@
 #import <Bolts/BFExecutor.h>
 #import <Bolts/BFTaskCompletionSource.h>
 
+#import <Parse/Parse.h>
+
 #import "PFTwitterAuthenticationProvider.h"
 #import "PFTwitterPrivateUtilities.h"
 #import "PF_Twitter.h"
@@ -41,7 +43,13 @@ static PFTwitterAuthenticationProvider *authenticationProvider_;
                           @"You must call PFTwitterUtils initializeWithConsumerKey:consumerSecret: to use PFTwitterUtils.");
 }
 
++ (void)_assertParseInitialized {
+    PFTWConsistencyAssert([Parse getApplicationId] && [Parse getClientKey],
+                          @"PFTwitterUtils should be initialized after setting up Parse.");
+}
+
 + (void)initializeWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret {
+    [self _assertParseInitialized];
     if (![self _authenticationProvider]) {
         PF_Twitter *twitter = [[PF_Twitter alloc] init];
         twitter.consumerKey = consumerKey;
