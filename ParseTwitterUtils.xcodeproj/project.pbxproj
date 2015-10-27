@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06D00BAB1BC78F23005BAA6F /* ParseTwitterUtils.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06D00BAD1BC78F23005BAA6F /* ParseTwitterUtils.strings */; };
-		06D00BB51BC790F3005BAA6F /* PFTwitterLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D00BB41BC790F3005BAA6F /* PFTwitterLocalization.h */; settings = {ASSET_TAGS = (); }; };
+		06D00BB51BC790F3005BAA6F /* PFTwitterLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D00BB41BC790F3005BAA6F /* PFTwitterLocalization.h */; };
 		77DE89F60F51105C769BEC0B /* libPods-ParseTwitterUtils-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F31BB2625FB261014BCD4FB6 /* libPods-ParseTwitterUtils-Tests.a */; };
 		8135E4951B4B6A0E0092F452 /* PF_Twitter_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8135E48E1B4B6A0E0092F452 /* PF_Twitter_Private.h */; };
 		8135E4961B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8135E48F1B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h */; };
@@ -20,22 +20,22 @@
 		813DFC931AB2515A00F25A08 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DFC921AB2515A00F25A08 /* Bolts.framework */; };
 		813DFC951AB251F700F25A08 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DFC941AB251F700F25A08 /* Parse.framework */; };
 		813DFC981AB2526000F25A08 /* third_party_licenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 813DFC971AB2526000F25A08 /* third_party_licenses.txt */; };
-		813E54A41BB5DDEF00C727E8 /* PFTwitterUtils_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 813E54A31BB5DDEF00C727E8 /* PFTwitterUtils_Private.h */; settings = {ASSET_TAGS = (); }; };
-		813E54A91BB5E5FA00C727E8 /* PFTwitterPrivateUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 813E54A61BB5E52000C727E8 /* PFTwitterPrivateUtilities.m */; settings = {ASSET_TAGS = (); }; };
-		813E54AA1BB5E5FF00C727E8 /* PFTwitterPrivateUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 813E54A51BB5E52000C727E8 /* PFTwitterPrivateUtilities.h */; settings = {ASSET_TAGS = (); }; };
+		813E54A41BB5DDEF00C727E8 /* PFTwitterUtils_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 813E54A31BB5DDEF00C727E8 /* PFTwitterUtils_Private.h */; };
+		813E54A91BB5E5FA00C727E8 /* PFTwitterPrivateUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 813E54A61BB5E52000C727E8 /* PFTwitterPrivateUtilities.m */; };
+		813E54AA1BB5E5FF00C727E8 /* PFTwitterPrivateUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 813E54A51BB5E52000C727E8 /* PFTwitterPrivateUtilities.h */; };
 		815F18401B4B730E0066E996 /* PFOAuth1FlowDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 815F183E1B4B730E0066E996 /* PFOAuth1FlowDialog.h */; };
 		815F18411B4B730E0066E996 /* PFOAuth1FlowDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 815F183F1B4B730E0066E996 /* PFOAuth1FlowDialog.m */; };
-		81665C731BBDE27D00AE923F /* OAuth1FlowDialogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C6E1BBDE27D00AE923F /* OAuth1FlowDialogTests.m */; settings = {ASSET_TAGS = (); }; };
-		81665C741BBDE27D00AE923F /* OAuthCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C6F1BBDE27D00AE923F /* OAuthCoreTests.m */; settings = {ASSET_TAGS = (); }; };
-		81665C751BBDE27D00AE923F /* TwitterAuthenticationProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C701BBDE27D00AE923F /* TwitterAuthenticationProviderTests.m */; settings = {ASSET_TAGS = (); }; };
-		81665C761BBDE27D00AE923F /* TwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C711BBDE27D00AE923F /* TwitterTests.m */; settings = {ASSET_TAGS = (); }; };
-		81665C771BBDE27D00AE923F /* TwitterUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C721BBDE27D00AE923F /* TwitterUtilsTests.m */; settings = {ASSET_TAGS = (); }; };
-		81665C7C1BBDE2EE00AE923F /* PFTwitterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C7B1BBDE2EE00AE923F /* PFTwitterTestCase.m */; settings = {ASSET_TAGS = (); }; };
+		81665C731BBDE27D00AE923F /* OAuth1FlowDialogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C6E1BBDE27D00AE923F /* OAuth1FlowDialogTests.m */; };
+		81665C741BBDE27D00AE923F /* OAuthCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C6F1BBDE27D00AE923F /* OAuthCoreTests.m */; };
+		81665C751BBDE27D00AE923F /* TwitterAuthenticationProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C701BBDE27D00AE923F /* TwitterAuthenticationProviderTests.m */; };
+		81665C761BBDE27D00AE923F /* TwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C711BBDE27D00AE923F /* TwitterTests.m */; };
+		81665C771BBDE27D00AE923F /* TwitterUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C721BBDE27D00AE923F /* TwitterUtilsTests.m */; };
+		81665C7C1BBDE2EE00AE923F /* PFTwitterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 81665C7B1BBDE2EE00AE923F /* PFTwitterTestCase.m */; };
 		8166FB921B4F1DC5003841A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8166FB8F1B4F1DC5003841A2 /* main.m */; };
 		817A37CB1B4B741A00129AFA /* PF_OAuthCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 817A37C91B4B741A00129AFA /* PF_OAuthCore.h */; };
 		817A37CC1B4B741A00129AFA /* PF_OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 817A37CA1B4B741A00129AFA /* PF_OAuthCore.m */; };
-		819DAAD61BB5EC79002BDE2B /* PFTwitterAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DAAD41BB5EC79002BDE2B /* PFTwitterAlertView.h */; settings = {ASSET_TAGS = (); }; };
-		819DAAD71BB5EC79002BDE2B /* PFTwitterAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DAAD51BB5EC79002BDE2B /* PFTwitterAlertView.m */; settings = {ASSET_TAGS = (); }; };
+		819DAAD61BB5EC79002BDE2B /* PFTwitterAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DAAD41BB5EC79002BDE2B /* PFTwitterAlertView.h */; };
+		819DAAD71BB5EC79002BDE2B /* PFTwitterAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DAAD51BB5EC79002BDE2B /* PFTwitterAlertView.m */; };
 		81CB98CC1AB7905D00136FA5 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* ParseTwitterUtils.framework */; };
 		81CB98D81AB791FB00136FA5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DFC921AB2515A00F25A08 /* Bolts.framework */; };
 		81CB98DB1AB7920E00136FA5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DFC941AB251F700F25A08 /* Parse.framework */; };
@@ -490,7 +490,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PF;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Parse, LLC";
 				TargetAttributes = {
 					8166FB661B4F1D77003841A2 = {
