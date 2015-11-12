@@ -497,6 +497,8 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
         case UIInterfaceOrientationPortraitUpsideDown:
             return CGAffineTransformMakeRotation((CGFloat)-M_PI);
             break;
+        case UIInterfaceOrientationPortrait:
+        case UIInterfaceOrientationUnknown:
         default:
             break;
     }
