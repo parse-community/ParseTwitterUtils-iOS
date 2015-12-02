@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Gets the instance of the `PF_Twitter` object that Parse uses.
 
- @returns An instance of `PF_Twitter` object.
+ @return An instance of `PF_Twitter` object.
  */
 + (nullable PF_Twitter *)twitter;
 
@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param user User to check for a Twitter link. The user must be logged in on this device.
 
- @returns `YES` if the user has their account linked to Twitter, otherwise `NO`.
+ @return `YES` if the user has their account linked to Twitter, otherwise `NO`.
  */
 + (BOOL)isLinkedWithUser:(nullable PFUser *)user;
 
@@ -64,7 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
  This method delegates to Twitter to authenticate the user,
  and then automatically logs in (or creates, in the case where it is a new user) a `PFUser`.
 
- @returns The task, that encapsulates the work being done.
+ @return The task, that encapsulates the work being done.
  */
 + (BFTask PF_GENERIC(PFUser *)*)logInInBackground;
 
@@ -102,7 +102,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param authToken The auth token for the user's session.
  @param authTokenSecret The auth token secret for the user's session.
 
- @returns The task, that encapsulates the work being done.
+ @return The task, that encapsulates the work being done.
  */
 + (BFTask PF_GENERIC(PFUser *)*)logInWithTwitterIdInBackground:(NSString *)twitterId
                                                     screenName:(NSString *)screenName
@@ -173,7 +173,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param user User to link to Twitter.
 
- @returns The task, that encapsulates the work being done.
+ @return The task, that encapsulates the work being done.
  */
 + (BFTask PF_GENERIC(NSNumber *)*)linkUserInBackground:(PFUser *)user;
 
@@ -213,7 +213,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param screenName The screen name of the Twitter user being linked.
  @param authToken The auth token for the user's session.
  @param authTokenSecret The auth token secret for the user's session.
- @returns The task, that encapsulates the work being done.
+ @return The task, that encapsulates the work being done.
  */
 + (BFTask PF_GENERIC(NSNumber *)*)linkUserInBackground:(PFUser *)user
                                              twitterId:(NSString *)twitterId
@@ -274,7 +274,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param user User to unlink from Twitter.
 
- @returns Returns true if the unlink was successful.
+ @return Returns true if the unlink was successful.
  */
 + (BOOL)unlinkUser:(PFUser *)user;
 
@@ -284,7 +284,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param user User to unlink from Twitter.
  @param error Error object to set on error.
 
- @returns Returns `YES` if the unlink was successful, otherwise `NO`.
+ @return Returns `YES` if the unlink was successful, otherwise `NO`.
  */
 + (BOOL)unlinkUser:(PFUser *)user error:(NSError **)error;
 
@@ -293,7 +293,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param user User to unlink from Twitter.
 
- @returns The task, that encapsulates the work being done.
+ @return The task, that encapsulates the work being done.
  */
 + (BFTask PF_GENERIC(NSNumber *)*)unlinkUserInBackground:(PFUser *)user;
 

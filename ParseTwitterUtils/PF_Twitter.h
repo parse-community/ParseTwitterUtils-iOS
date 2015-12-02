@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
  Displays an auth dialog and populates the authToken, authTokenSecret, userId, and screenName properties
  if the Twitter user grants permission to the application.
 
- @returns The task, that encapsulates the work being done.
+ @return The task, that encapsulates the work being done.
  */
 - (BFTask *)authorizeInBackground;
 
