@@ -29,9 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 ///--------------------------------------
 
 /**
- @abstract Gets the instance of the <PF_Twitter> object that Parse uses.
+ @abstract Gets the instance of the `PF_Twitter` object that Parse uses.
 
- @returns An instance of <PF_Twitter> object.
+ @returns An instance of `PF_Twitter` object.
  */
 + (nullable PF_Twitter *)twitter;
 
@@ -62,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract *Asynchronously* logs in a user using Twitter.
 
  @discussion This method delegates to Twitter to authenticate the user,
- and then automatically logs in (or creates, in the case where it is a new user) a <PFUser>.
+ and then automatically logs in (or creates, in the case where it is a new user) a `PFUser`.
 
  @returns The task, that encapsulates the work being done.
  */
@@ -72,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract *Asynchronously* logs in a user using Twitter.
 
  @discussion This method delegates to Twitter to authenticate the user,
- and then automatically logs in (or creates, in the case where it is a new user) <PFUser>.
+ and then automatically logs in (or creates, in the case where it is a new user) `PFUser`.
 
  @param block The block to execute.
  It should have the following argument signature: `^(PFUser *user, NSError *error)`.
@@ -83,7 +83,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract *Asynchronously* Logs in a user using Twitter.
 
  @discussion This method delegates to Twitter to authenticate the user,
- and then automatically logs in (or creates, in the case where it is a new user) a <PFUser>.
+ and then automatically logs in (or creates, in the case where it is a new user) a `PFUser`.
 
  @param target Target object for the selector
  @param selector The selector that will be called when the asynchrounous request is complete.
@@ -95,7 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract *Asynchronously* logs in a user using Twitter.
 
  @discussion Allows you to handle user login to Twitter, then provide authentication
- data to log in (or create, in the case where it is a new user) the <PFUser>.
+ data to log in (or create, in the case where it is a new user) the `PFUser`.
 
  @param twitterId The id of the Twitter user being linked.
  @param screenName The screen name of the Twitter user being linked.
@@ -113,7 +113,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract Logs in a user using Twitter.
 
  @discussion Allows you to handle user login to Twitter, then provide authentication data
- to log in (or create, in the case where it is a new user) the <PFUser>.
+ to log in (or create, in the case where it is a new user) the `PFUser`.
 
  @param twitterId The id of the Twitter user being linked
  @param screenName The screen name of the Twitter user being linked
@@ -132,7 +132,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract Logs in a user using Twitter.
 
  @discussion Allows you to handle user login to Twitter, then provide authentication data
- to log in (or create, in the case where it is a new user) the <PFUser>.
+ to log in (or create, in the case where it is a new user) the `PFUser`.
 
  @param twitterId The id of the Twitter user being linked.
  @param screenName The screen name of the Twitter user being linked.
@@ -157,7 +157,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract *Asynchronously* links Twitter to an existing PFUser.
 
  @discussion This method delegates to Twitter to authenticate the user,
- and then automatically links the account to the <PFUser>.
+ and then automatically links the account to the `PFUser`.
 
  @param user User to link to Twitter.
 
@@ -166,10 +166,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)linkUser:(PFUser *)user PARSE_DEPRECATED("Please use +linkUserInBackground: instead.");
 
 /**
- @abstract *Asynchronously* links Twitter to an existing <PFUser>.
+ @abstract *Asynchronously* links Twitter to an existing `PFUser`.
 
  @discussion This method delegates to Twitter to authenticate the user,
- and then automatically links the account to the <PFUser>.
+ and then automatically links the account to the `PFUser`.
 
  @param user User to link to Twitter.
 
@@ -178,10 +178,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (BFTask PF_GENERIC(NSNumber *)*)linkUserInBackground:(PFUser *)user;
 
 /**
- @abstract *Asynchronously* links Twitter to an existing <PFUser>.
+ @abstract *Asynchronously* links Twitter to an existing `PFUser`.
 
  @discussion This method delegates to Twitter to authenticate the user,
- and then automatically links the account to the <PFUser>.
+ and then automatically links the account to the `PFUser`.
 
  @param user User to link to Twitter.
  @param block The block to execute.
@@ -190,10 +190,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)linkUser:(PFUser *)user block:(nullable PFBooleanResultBlock)block;
 
 /*
- @abstract *Asynchronously* links Twitter to an existing <PFUser>.
+ @abstract *Asynchronously* links Twitter to an existing `PFUser`.
 
  @discussion This method delegates to Twitter to authenticate the user,
- and then automatically links the account to the <PFUser>.
+ and then automatically links the account to the `PFUser`.
 
  @param user User to link to Twitter.
  @param target Target object for the selector
@@ -206,7 +206,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract *Asynchronously* links Twitter to an existing PFUser asynchronously.
 
  @discussion Allows you to handle user login to Twitter,
- then provide authentication data to link the account to the <PFUser>.
+ then provide authentication data to link the account to the `PFUser`.
 
  @param user User to link to Twitter.
  @param twitterId The id of the Twitter user being linked.
@@ -222,10 +222,10 @@ NS_ASSUME_NONNULL_BEGIN
                                        authTokenSecret:(NSString *)authTokenSecret;
 
 /**
- @abstract *Asynchronously* links Twitter to an existing <PFUser>.
+ @abstract *Asynchronously* links Twitter to an existing `PFUser`.
 
  @discussionAllows you to handle user login to Twitter,
- then provide authentication data to link the account to the <PFUser>.
+ then provide authentication data to link the account to the `PFUser`.
 
  @param user User to link to Twitter.
  @param twitterId The id of the Twitter user being linked.
@@ -243,10 +243,10 @@ NS_ASSUME_NONNULL_BEGIN
            block:(nullable PFBooleanResultBlock)block;
 
 /*
- @abstract Links Twitter to an existing <PFUser>.
+ @abstract Links Twitter to an existing `PFUser`.
 
  @discussion This method allows you to handle user login to Twitter,
- then provide authentication data to link the account to the <PFUser>.
+ then provide authentication data to link the account to the `PFUser`.
 
  @param user User to link to Twitter.
  @param twitterId The id of the Twitter user being linked.
@@ -270,7 +270,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///--------------------------------------
 
 /**
- @abstract *Synchronously* unlinks the <PFUser> from a Twitter account.
+ @abstract *Synchronously* unlinks the `PFUser` from a Twitter account.
 
  @param user User to unlink from Twitter.
 
