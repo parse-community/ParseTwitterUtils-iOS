@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class BFTask PF_GENERIC(__covariant BFGenericType);
 @class PF_Twitter;
 
-/*!
+/**
  The `PFTwitterUtils` class provides utility functions for working with Twitter in a Parse application.
 
  This class is currently for iOS only.
@@ -28,14 +28,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// @name Interacting With Twitter
 ///--------------------------------------
 
-/*!
+/**
  @abstract Gets the instance of the <PF_Twitter> object that Parse uses.
 
  @returns An instance of <PF_Twitter> object.
  */
 + (nullable PF_Twitter *)twitter;
 
-/*!
+/**
  @abstract Initializes the Twitter singleton.
 
  @warning You must invoke this in order to use the Twitter functionality in Parse.
@@ -45,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)initializeWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret;
 
-/*!
+/**
  @abstract Whether the user has their account linked to Twitter.
 
  @param user User to check for a Twitter link. The user must be logged in on this device.
@@ -58,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @name Logging In & Creating Twitter-Linked Users
 ///--------------------------------------
 
-/*!
+/**
  @abstract *Asynchronously* logs in a user using Twitter.
 
  @discussion This method delegates to Twitter to authenticate the user,
@@ -68,7 +68,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BFTask PF_GENERIC(PFUser *)*)logInInBackground;
 
-/*!
+/**
  @abstract *Asynchronously* logs in a user using Twitter.
 
  @discussion This method delegates to Twitter to authenticate the user,
@@ -91,7 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)logInWithTarget:(nullable id)target selector:(nullable SEL)selector;
 
-/*!
+/**
  @abstract *Asynchronously* logs in a user using Twitter.
 
  @discussion Allows you to handle user login to Twitter, then provide authentication
@@ -109,7 +109,7 @@ NS_ASSUME_NONNULL_BEGIN
                                                      authToken:(NSString *)authToken
                                                authTokenSecret:(NSString *)authTokenSecret;
 
-/*!
+/**
  @abstract Logs in a user using Twitter.
 
  @discussion Allows you to handle user login to Twitter, then provide authentication data
@@ -153,7 +153,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @name Linking Users with Twitter
 ///--------------------------------------
 
-/*!
+/**
  @abstract *Asynchronously* links Twitter to an existing PFUser.
 
  @discussion This method delegates to Twitter to authenticate the user,
@@ -165,7 +165,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)linkUser:(PFUser *)user PARSE_DEPRECATED("Please use +linkUserInBackground: instead.");
 
-/*!
+/**
  @abstract *Asynchronously* links Twitter to an existing <PFUser>.
 
  @discussion This method delegates to Twitter to authenticate the user,
@@ -177,7 +177,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BFTask PF_GENERIC(NSNumber *)*)linkUserInBackground:(PFUser *)user;
 
-/*!
+/**
  @abstract *Asynchronously* links Twitter to an existing <PFUser>.
 
  @discussion This method delegates to Twitter to authenticate the user,
@@ -202,7 +202,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)linkUser:(PFUser *)user target:(nullable id)target selector:(nullable SEL)selector;
 
-/*!
+/**
  @abstract *Asynchronously* links Twitter to an existing PFUser asynchronously.
 
  @discussion Allows you to handle user login to Twitter,
@@ -221,7 +221,7 @@ NS_ASSUME_NONNULL_BEGIN
                                              authToken:(NSString *)authToken
                                        authTokenSecret:(NSString *)authTokenSecret;
 
-/*!
+/**
  @abstract *Asynchronously* links Twitter to an existing <PFUser>.
 
  @discussionAllows you to handle user login to Twitter,
@@ -269,7 +269,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @name Unlinking Users from Twitter
 ///--------------------------------------
 
-/*!
+/**
  @abstract *Synchronously* unlinks the <PFUser> from a Twitter account.
 
  @param user User to unlink from Twitter.
@@ -278,7 +278,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BOOL)unlinkUser:(PFUser *)user;
 
-/*!
+/**
  @abstract *Synchronously* unlinks the PFUser from a Twitter account.
 
  @param user User to unlink from Twitter.
@@ -288,7 +288,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BOOL)unlinkUser:(PFUser *)user error:(NSError **)error;
 
-/*!
+/**
  @abstract Makes an *asynchronous* request to unlink a user from a Twitter account.
 
  @param user User to unlink from Twitter.
@@ -297,7 +297,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BFTask PF_GENERIC(NSNumber *)*)unlinkUserInBackground:(PFUser *)user;
 
-/*!
+/**
  @abstract Makes an *asynchronous* request to unlink a user from a Twitter account.
 
  @param user User to unlink from Twitter.

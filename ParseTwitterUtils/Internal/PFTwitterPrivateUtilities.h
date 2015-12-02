@@ -32,7 +32,7 @@
 
 @end
 
-/*!
+/**
  Raises an `NSInternalInconsistencyException` if the `condition` does not pass.
  Use `description` to supply the way to fix the exception.
  */
