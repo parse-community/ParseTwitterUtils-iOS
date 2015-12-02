@@ -14,7 +14,7 @@
 
 @protocol PFOAuth1FlowDialogDataSource <NSObject>
 
-/*!
+/**
  Asks if a link touched by a user should be opened in an external browser.
 
  If a user touches a link, the default behavior is to open the link in the Safari browser,
@@ -30,7 +30,7 @@
 
 typedef void (^PFOAuth1FlowDialogCompletion)(BOOL succeeded, NSURL *url, NSError *error);
 
-/*!
+/**
  To allow for greater mockability, this protocol exposes all of the methods implemented by PFOAuth1FlowDialog.
  */
 @protocol PFOAuth1FlowDialogInterface <NSObject>
@@ -41,25 +41,25 @@ typedef void (^PFOAuth1FlowDialogCompletion)(BOOL succeeded, NSURL *url, NSError
 @property (nonatomic, copy) NSDictionary *queryParameters;
 @property (nonatomic, copy) NSString *redirectURLPrefix;
 
-/*!
+/**
  The title that is shown in the header atop the view.
  */
 @property (nonatomic, copy) NSString *title;
 
 + (instancetype)dialogWithURL:(NSURL *)url queryParameters:(NSDictionary *)queryParameters;
 
-/*!
+/**
  The view will be added to the top of the current key window.
  */
 - (void)showAnimated:(BOOL)animated;
 
-/*!
+/**
  Hides the view.
  This method does not call the completion block.
  */
 - (void)dismissAnimated:(BOOL)animated;
 
-/*!
+/**
  Displays a URL in the dialog.
  */
 - (void)loadURL:(NSURL *)url queryParameters:(NSDictionary *)parameters;

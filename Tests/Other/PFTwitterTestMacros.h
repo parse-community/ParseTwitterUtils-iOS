@@ -10,7 +10,7 @@
 #ifndef PFTwitterTestMacros_h
 #define PFTwitterTestMacros_h
 
-/*!
+/**
  To prevent retain cycles by OCMock, this macro allows us to capture a weak reference to return from a stubbed method.
  */
 #define andReturnWeak(variable) _andDo(                                              \
