@@ -61,7 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *Asynchronously* logs in a user using Twitter.
 
- @discussion This method delegates to Twitter to authenticate the user,
+ This method delegates to Twitter to authenticate the user,
  and then automatically logs in (or creates, in the case where it is a new user) a `PFUser`.
 
  @returns The task, that encapsulates the work being done.
@@ -71,7 +71,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *Asynchronously* logs in a user using Twitter.
 
- @discussion This method delegates to Twitter to authenticate the user,
+ This method delegates to Twitter to authenticate the user,
  and then automatically logs in (or creates, in the case where it is a new user) `PFUser`.
 
  @param block The block to execute.
@@ -82,7 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*
  *Asynchronously* Logs in a user using Twitter.
 
- @discussion This method delegates to Twitter to authenticate the user,
+ This method delegates to Twitter to authenticate the user,
  and then automatically logs in (or creates, in the case where it is a new user) a `PFUser`.
 
  @param target Target object for the selector
@@ -94,7 +94,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *Asynchronously* logs in a user using Twitter.
 
- @discussion Allows you to handle user login to Twitter, then provide authentication
+ Allows you to handle user login to Twitter, then provide authentication
  data to log in (or create, in the case where it is a new user) the `PFUser`.
 
  @param twitterId The id of the Twitter user being linked.
@@ -112,7 +112,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Logs in a user using Twitter.
 
- @discussion Allows you to handle user login to Twitter, then provide authentication data
+ Allows you to handle user login to Twitter, then provide authentication data
  to log in (or create, in the case where it is a new user) the `PFUser`.
 
  @param twitterId The id of the Twitter user being linked
@@ -131,7 +131,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*
  Logs in a user using Twitter.
 
- @discussion Allows you to handle user login to Twitter, then provide authentication data
+ Allows you to handle user login to Twitter, then provide authentication data
  to log in (or create, in the case where it is a new user) the `PFUser`.
 
  @param twitterId The id of the Twitter user being linked.
@@ -156,7 +156,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *Asynchronously* links Twitter to an existing PFUser.
 
- @discussion This method delegates to Twitter to authenticate the user,
+ This method delegates to Twitter to authenticate the user,
  and then automatically links the account to the `PFUser`.
 
  @param user User to link to Twitter.
@@ -168,7 +168,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *Asynchronously* links Twitter to an existing `PFUser`.
 
- @discussion This method delegates to Twitter to authenticate the user,
+ This method delegates to Twitter to authenticate the user,
  and then automatically links the account to the `PFUser`.
 
  @param user User to link to Twitter.
@@ -180,7 +180,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *Asynchronously* links Twitter to an existing `PFUser`.
 
- @discussion This method delegates to Twitter to authenticate the user,
+ This method delegates to Twitter to authenticate the user,
  and then automatically links the account to the `PFUser`.
 
  @param user User to link to Twitter.
@@ -192,7 +192,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*
  *Asynchronously* links Twitter to an existing `PFUser`.
 
- @discussion This method delegates to Twitter to authenticate the user,
+ This method delegates to Twitter to authenticate the user,
  and then automatically links the account to the `PFUser`.
 
  @param user User to link to Twitter.
@@ -205,7 +205,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *Asynchronously* links Twitter to an existing PFUser asynchronously.
 
- @discussion Allows you to handle user login to Twitter,
+ Allows you to handle user login to Twitter,
  then provide authentication data to link the account to the `PFUser`.
 
  @param user User to link to Twitter.
@@ -245,7 +245,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*
  Links Twitter to an existing `PFUser`.
 
- @discussion This method allows you to handle user login to Twitter,
+ This method allows you to handle user login to Twitter,
  then provide authentication data to link the account to the `PFUser`.
 
  @param user User to link to Twitter.

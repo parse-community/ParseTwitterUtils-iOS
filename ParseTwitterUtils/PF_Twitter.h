@@ -75,7 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
  Adds a 3-legged OAuth signature to an `NSMutableURLRequest` based
  upon the properties set for the Twitter object.
 
- @discussion Use this function to sign requests being made to the Twitter API.
+ Use this function to sign requests being made to the Twitter API.
 
  @param request Request to sign.
  */
