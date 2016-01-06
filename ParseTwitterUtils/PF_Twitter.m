@@ -371,8 +371,8 @@
     return source.task;
 }
 
-- (BFTask PF_GENERIC(ACAccount *)*)_getLocalTwitterAccountAsync {
-    BFTaskCompletionSource PF_GENERIC(ACAccount *)*source = [BFTaskCompletionSource taskCompletionSource];
+- (BFTask<ACAccount *> *)_getLocalTwitterAccountAsync {
+    BFTaskCompletionSource<ACAccount *> *source = [BFTaskCompletionSource taskCompletionSource];
 
     // If no twitter accounts present in the system, then no need to ask for permission to the user
     if (![SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {

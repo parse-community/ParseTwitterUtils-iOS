@@ -85,7 +85,7 @@ static NSString *const _PFTwitterAuthDataConsumerSecretKey = @"consumer_secret";
 #pragma mark - PFUserAuthenticationDelegate
 ///--------------------------------------
 
-- (BOOL)restoreAuthenticationWithAuthData:(NSDictionary PF_GENERIC(NSString *, NSString *)*)authData {
+- (BOOL)restoreAuthenticationWithAuthData:(NSDictionary<NSString *, NSString *> *)authData {
     // If authData is nil, this is an unlink operation, which should succeed.
     if (!authData) {
         self.twitter.userId = nil;
