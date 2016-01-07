@@ -14,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class BFTask PF_GENERIC(__covariant BFGenericType);
+@class BFTask<__covariant BFGenericType>;
 @class PF_Twitter;
 
 /**
@@ -66,7 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return The task, that encapsulates the work being done.
  */
-+ (BFTask PF_GENERIC(PFUser *)*)logInInBackground;
++ (BFTask<PFUser *> *)logInInBackground;
 
 /**
  *Asynchronously* logs in a user using Twitter.
@@ -104,10 +104,10 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return The task, that encapsulates the work being done.
  */
-+ (BFTask PF_GENERIC(PFUser *)*)logInWithTwitterIdInBackground:(NSString *)twitterId
-                                                    screenName:(NSString *)screenName
-                                                     authToken:(NSString *)authToken
-                                               authTokenSecret:(NSString *)authTokenSecret;
++ (BFTask<PFUser *> *)logInWithTwitterIdInBackground:(NSString *)twitterId
+                                          screenName:(NSString *)screenName
+                                           authToken:(NSString *)authToken
+                                     authTokenSecret:(NSString *)authTokenSecret;
 
 /**
  Logs in a user using Twitter.
@@ -175,7 +175,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return The task, that encapsulates the work being done.
  */
-+ (BFTask PF_GENERIC(NSNumber *)*)linkUserInBackground:(PFUser *)user;
++ (BFTask<NSNumber *> *)linkUserInBackground:(PFUser *)user;
 
 /**
  *Asynchronously* links Twitter to an existing `PFUser`.
@@ -215,11 +215,11 @@ NS_ASSUME_NONNULL_BEGIN
  @param authTokenSecret The auth token secret for the user's session.
  @return The task, that encapsulates the work being done.
  */
-+ (BFTask PF_GENERIC(NSNumber *)*)linkUserInBackground:(PFUser *)user
-                                             twitterId:(NSString *)twitterId
-                                            screenName:(NSString *)screenName
-                                             authToken:(NSString *)authToken
-                                       authTokenSecret:(NSString *)authTokenSecret;
++ (BFTask<NSNumber *> *)linkUserInBackground:(PFUser *)user
+                                   twitterId:(NSString *)twitterId
+                                  screenName:(NSString *)screenName
+                                   authToken:(NSString *)authToken
+                             authTokenSecret:(NSString *)authTokenSecret;
 
 /**
  *Asynchronously* links Twitter to an existing `PFUser`.
@@ -295,7 +295,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return The task, that encapsulates the work being done.
  */
-+ (BFTask PF_GENERIC(NSNumber *)*)unlinkUserInBackground:(PFUser *)user;
++ (BFTask<NSNumber *> *)unlinkUserInBackground:(PFUser *)user;
 
 /**
  Makes an *asynchronous* request to unlink a user from a Twitter account.

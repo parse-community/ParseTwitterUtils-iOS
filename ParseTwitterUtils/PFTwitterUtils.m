@@ -78,7 +78,7 @@ static PFTwitterAuthenticationProvider *authenticationProvider_;
     return [[[self unlinkUserInBackground:user] pftw_waitForResult:error] boolValue];
 }
 
-+ (BFTask PF_GENERIC(NSNumber *)*)unlinkUserInBackground:(PFUser *)user {
++ (BFTask<NSNumber *> *)unlinkUserInBackground:(PFUser *)user {
     [self _assertTwitterInitialized];
     return [user unlinkWithAuthTypeInBackground:PFTwitterUserAuthenticationType];
 }
@@ -98,7 +98,7 @@ static PFTwitterAuthenticationProvider *authenticationProvider_;
     [self linkUserInBackground:user];
 }
 
-+ (BFTask PF_GENERIC(NSNumber *)*)linkUserInBackground:(PFUser *)user {
++ (BFTask<NSNumber *> *)linkUserInBackground:(PFUser *)user {
     [self _assertTwitterInitialized];
 
     PFTwitterAuthenticationProvider *provider = [self _authenticationProvider];
@@ -117,11 +117,11 @@ static PFTwitterAuthenticationProvider *authenticationProvider_;
     }];
 }
 
-+ (BFTask PF_GENERIC(NSNumber *)*)linkUserInBackground:(PFUser *)user
-                                             twitterId:(NSString *)twitterId
-                                            screenName:(NSString *)screenName
-                                             authToken:(NSString *)authToken
-                                       authTokenSecret:(NSString *)authTokenSecret {
++ (BFTask<NSNumber *> *)linkUserInBackground:(PFUser *)user
+                                   twitterId:(NSString *)twitterId
+                                  screenName:(NSString *)screenName
+                                   authToken:(NSString *)authToken
+                             authTokenSecret:(NSString *)authTokenSecret {
     [self _assertTwitterInitialized];
 
     PFTwitterAuthenticationProvider *provider = [self _authenticationProvider];
@@ -165,7 +165,7 @@ static PFTwitterAuthenticationProvider *authenticationProvider_;
                        }];
 }
 
-+ (BFTask PF_GENERIC(PFUser *)*)logInInBackground {
++ (BFTask<PFUser *> *)logInInBackground {
     [self _assertTwitterInitialized];
 
     PFTwitterAuthenticationProvider *provider = [self _authenticationProvider];
@@ -184,10 +184,10 @@ static PFTwitterAuthenticationProvider *authenticationProvider_;
     }];
 }
 
-+ (BFTask PF_GENERIC(PFUser *)*)logInWithTwitterIdInBackground:(NSString *)twitterId
-                                                    screenName:(NSString *)screenName
-                                                     authToken:(NSString *)authToken
-                                               authTokenSecret:(NSString *)authTokenSecret {
++ (BFTask<PFUser *> *)logInWithTwitterIdInBackground:(NSString *)twitterId
+                                          screenName:(NSString *)screenName
+                                           authToken:(NSString *)authToken
+                                     authTokenSecret:(NSString *)authTokenSecret {
     [self _assertTwitterInitialized];
 
     PFTwitterAuthenticationProvider *provider = [self _authenticationProvider];
