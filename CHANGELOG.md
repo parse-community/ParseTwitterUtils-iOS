@@ -3,6 +3,20 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [ParseTwitterUtils 1.10.0](https://github.com/ParsePlatform/ParseTwitterUtils-iOS/releases/tag/1.10.0) (01/07/2016)
+
+#### New
+- ParseTwitterUtils now requires Xcode 7.0+.  
+  [#16](https://github.com/ParsePlatform/ParseTwitterUtils-iOS/pull/16),
+  [#17](https://github.com/ParsePlatform/ParseTwitterUtils-iOS/pull/17),
+  [#20](https://github.com/ParsePlatform/ParseTwitterUtils-iOS/pull/20)
+  by [Nikita Lutsenko](https://github.com/nlutsenko)
+
+#### Improved
+- Cleaned up and improved documentation.  
+  [#15](https://github.com/ParsePlatform/ParseTwitterUtils-iOS/pull/15)
+  by [Nikita Lutsenko](https://github.com/nlutsenko)
+
 ## [ParseTwitterUtils 1.9.1](https://github.com/ParsePlatform/ParseTwitterUtils-iOS/releases/tag/1.9.1) (11/17/2015)
 
 #### New
