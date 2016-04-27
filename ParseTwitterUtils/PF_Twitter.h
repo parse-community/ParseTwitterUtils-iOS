@@ -69,6 +69,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (BFTask *)authorizeInBackground;
 
 /**
+ Invalidates an OAuth token for the current user, if the Twitter user has granted permission to the
+ current application.
+
+ @return The task, that encapsulates the work being done.
+ */
+- (BFTask *)deauthorizeInBackground;
+
+/**
  Displays an auth dialog and populates the authToken, authTokenSecret, userId, and screenName properties
  if the Twitter user grants permission to the application.
 

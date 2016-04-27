@@ -622,4 +622,67 @@ typedef void (^NSURLSessionDataTaskCompletionHandler)(NSData *data, NSURLRespons
     OCMVerifyAll(mockedURLSession);
 }
 
+- (void)testDeauthorizeLoggedOutAccount {
+    id store = PFStrictClassMock([ACAccountStore class]);
+    NSURLSession *session = PFStrictClassMock([NSURLSession class]);
+    id mockedDialog = PFStrictProtocolMock(@protocol(PFOAuth1FlowDialogInterface));
+    PF_Twitter *twitter = [[PF_Twitter alloc] initWithAccountStore:store urlSession:session dialogClass:mockedDialog];
+
+    XCTestExpectation *expectation = [self currentSelectorTestExpectation];
+    [[twitter authorizeInBackground] continueWithBlock:^id(BFTask *task) {
+        NSError *error = task.error;
+        XCTAssertNotNil(error);
+        XCTAssertEqualObjects(error.domain, PFParseErrorDomain);
+        XCTAssertEqual(error.code, 2);
+        [expectation fulfill];
+        return nil;
+    }];
+    [self waitForTestExpectations];
+}
+
+- (void)testDeauthorizeLoggedInAccount {
+    id store = PFStrictClassMock([ACAccountStore class]);
+    NSURLSession *session = PFStrictClassMock([NSURLSession class]);
+
+    id mockedStore = PFStrictClassMock([ACAccountStore class]);
+    id mockedURLSession = PFStrictClassMock([NSURLSession class]);
+    id mockedOperationQueue = PFStrictClassMock([NSOperationQueue class]);
+
+    id mockedDialog = PFStrictProtocolMock(@protocol(PFOAuth1FlowDialogInterface));
+    PF_Twitter *twitter = [[PF_Twitter alloc] initWithAccountStore:store urlSession:session dialogClass:mockedDialog];
+    twitter.consumerKey = @"consumer_key";
+    twitter.consumerSecret = @"consumer_secret";
+    twitter.authToken = @"auth_token";
+    twitter.authTokenSecret = @"auth_token_secret";
+    twitter.userId = @"user_id";
+    twitter.screenName = @"screen_name";
+
+    __block NSURLSessionDataTaskCompletionHandler completionHandler = nil;
+    [OCMStub([mockedURLSession dataTaskWithRequest:[OCMArg checkWithBlock:^BOOL(id obj) {
+        NSURLRequest *request = obj;
+        return [request.URL.lastPathComponent isEqualToString:@"invalidate_token"];
+    }] completionHandler:[OCMArg checkWithBlock:^BOOL(id obj) {
+        completionHandler = obj;
+        return (obj != nil);
+    }]]).andDo(^(NSInvocation *invocation) {
+        completionHandler([NSData data], nil, nil);
+    }) andReturn:[OCMockObject niceMockForClass:[NSURLSessionDataTask class]]];
+
+    XCTestExpectation *expectation = [self currentSelectorTestExpectation];
+    [[twitter deauthorizeInBackground] continueWithBlock:^id(BFTask *task) {
+        NSError *error = task.error;
+        XCTAssertNil(error);
+        XCTAssertNotNil(task.result);
+
+		XCTAssertNil(twitter.userId);
+		XCTAssertNil(twitter.screenName);
+		XCTAssertNil(twitter.userId);
+		XCTAssertNil(twitter.userId);
+
+        [expectation fulfill];
+        return nil;
+    }];
+    [self waitForTestExpectations];
+}
+
 @end
