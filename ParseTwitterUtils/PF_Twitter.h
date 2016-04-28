@@ -22,6 +22,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PF_Twitter : NSObject
 
 /**
+ Initializes an instance of `PF_Twitter` configured to access device Twitter accounts with Accounts.framework,
+ and remote access to Twitter accounts - and, if no accounts are found locally - through a built-in webview.
+
+ After setting `consumerKey` and `consumerSecret`, authorization to Twitter accounts can be requested with
+`authorizeInBackground`, and then revoked with its opposite, `deauthorizeInBackground`.
+ */
+- (instancetype)init;
+
+/**
  Consumer key of the application that is used to authorize with Twitter.
  */
 @property (nullable, nonatomic, copy) NSString *consumerKey;
@@ -58,6 +67,14 @@ NS_ASSUME_NONNULL_BEGIN
  @return The task, that encapsulates the work being done.
  */
 - (BFTask *)authorizeInBackground;
+
+/**
+ Invalidates an OAuth token for the current user, if the Twitter user has granted permission to the
+ current application.
+
+ @return The task, that encapsulates the work being done.
+ */
+- (BFTask *)deauthorizeInBackground;
 
 /**
  Displays an auth dialog and populates the authToken, authTokenSecret, userId, and screenName properties

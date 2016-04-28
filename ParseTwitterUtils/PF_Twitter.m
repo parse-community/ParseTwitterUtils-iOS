@@ -92,6 +92,28 @@
         return source.task;
     }];
 }
+- (BFTask *)deauthorizeInBackground {
+    if (self.consumerKey.length == 0 || self.consumerSecret.length == 0) {
+        //TODO: (nlutsenko) This doesn't look right, maybe we should add additional error code?
+        return [BFTask taskWithError:[NSError errorWithDomain:PFParseErrorDomain code:1 userInfo:nil]];
+    }
+
+    return [[self _performDeauthAsync] pftw_continueAsyncWithBlock:^id(BFTask *task) {
+        BFTaskCompletionSource *source = [BFTaskCompletionSource taskCompletionSource];
+        if (task.cancelled) {
+            [source cancel];
+        } else if (!task.error && !task.result) {
+            source.result = nil;
+        } else if (task.error) {
+            [source trySetError:task.error];
+        } else if (task.result) {
+            [self setLoginResultValues:nil];
+
+            [source trySetResult:task.result];
+        }
+        return source.task;
+    }];
+}
 
 - (void)authorizeWithSuccess:(void (^)(void))success
                      failure:(void (^)(NSError *error))failure
@@ -426,6 +448,26 @@
     }];
 
     return source.task;
+}
+
+- (BFTask *)_performDeauthAsync {
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    request.URL = [NSURL URLWithString:@"https://api.twitter.com/oauth2/invalidate_token"];
+    request.HTTPMethod = @"POST";
+
+    [self signRequest:request];
+
+    BFTaskCompletionSource *taskCompletionSource = [BFTaskCompletionSource taskCompletionSource];
+
+    [[self.urlSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            [taskCompletionSource trySetError:error];
+        } else {
+            [taskCompletionSource trySetResult:data];
+        }
+    }] resume];
+
+    return taskCompletionSource.task;
 }
 
 ///--------------------------------------
