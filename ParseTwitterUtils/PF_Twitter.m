@@ -100,19 +100,17 @@
 
     return [[self _performDeauthAsync] pftw_continueAsyncWithBlock:^id(BFTask *task) {
         BFTaskCompletionSource *source = [BFTaskCompletionSource taskCompletionSource];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (task.cancelled) {
-                [source cancel];
-            } else if (!task.error && !task.result) {
-                source.result = nil;
-            } else if (task.error) {
-                [source trySetError:task.error];
-            } else if (task.result) {
-                [self setLoginResultValues:@{}];
+        if (task.cancelled) {
+            [source cancel];
+        } else if (!task.error && !task.result) {
+            source.result = nil;
+        } else if (task.error) {
+            [source trySetError:task.error];
+        } else if (task.result) {
+            [self setLoginResultValues:nil];
 
-                [source trySetResult:task.result];
-            }
-        });
+            [source trySetResult:task.result];
+        }
         return source.task;
     }];
 }

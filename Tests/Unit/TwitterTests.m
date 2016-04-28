@@ -633,7 +633,7 @@ typedef void (^NSURLSessionDataTaskCompletionHandler)(NSData *data, NSURLRespons
         NSError *error = task.error;
         XCTAssertNotNil(error);
         XCTAssertEqualObjects(error.domain, PFParseErrorDomain);
-        XCTAssertEqual(error.code, 2);
+        XCTAssertEqual(error.code, 1);
         [expectation fulfill];
         return nil;
     }];
@@ -641,15 +641,12 @@ typedef void (^NSURLSessionDataTaskCompletionHandler)(NSData *data, NSURLRespons
 }
 
 - (void)testDeauthorizeLoggedInAccount {
-    id store = PFStrictClassMock([ACAccountStore class]);
-    NSURLSession *session = PFStrictClassMock([NSURLSession class]);
-
     id mockedStore = PFStrictClassMock([ACAccountStore class]);
     id mockedURLSession = PFStrictClassMock([NSURLSession class]);
     id mockedOperationQueue = PFStrictClassMock([NSOperationQueue class]);
 
     id mockedDialog = PFStrictProtocolMock(@protocol(PFOAuth1FlowDialogInterface));
-    PF_Twitter *twitter = [[PF_Twitter alloc] initWithAccountStore:store urlSession:session dialogClass:mockedDialog];
+    PF_Twitter *twitter = [[PF_Twitter alloc] initWithAccountStore:mockedStore urlSession:mockedURLSession dialogClass:mockedDialog];
     twitter.consumerKey = @"consumer_key";
     twitter.consumerSecret = @"consumer_secret";
     twitter.authToken = @"auth_token";
@@ -674,10 +671,8 @@ typedef void (^NSURLSessionDataTaskCompletionHandler)(NSData *data, NSURLRespons
         XCTAssertNil(error);
         XCTAssertNotNil(task.result);
 
-		XCTAssertNil(twitter.userId);
-		XCTAssertNil(twitter.screenName);
-		XCTAssertNil(twitter.userId);
-		XCTAssertNil(twitter.userId);
+        XCTAssertNil(twitter.authToken);
+        XCTAssertNil(twitter.authTokenSecret);
 
         [expectation fulfill];
         return nil;
