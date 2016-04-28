@@ -673,6 +673,8 @@ typedef void (^NSURLSessionDataTaskCompletionHandler)(NSData *data, NSURLRespons
 
         XCTAssertNil(twitter.authToken);
         XCTAssertNil(twitter.authTokenSecret);
+        XCTAssertNil(twitter.userId);
+        XCTAssertNil(twitter.screenName);
 
         [expectation fulfill];
         return nil;
