@@ -490,7 +490,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PF;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Parse, LLC";
 				TargetAttributes = {
 					8166FB661B4F1D77003841A2 = {
