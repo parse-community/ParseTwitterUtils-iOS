@@ -55,6 +55,32 @@ static BOOL PFOAuth1FlowDialogIsDevicePad() {
     return isPad;
 }
 
+static CGFloat PFTFloatRound(CGFloat value, NSRoundingMode mode) {
+    switch (mode) {
+        case NSRoundPlain:
+        case NSRoundBankers:
+#if CGFLOAT_IS_DOUBLE
+            value = round(value);
+#else
+            value = roundf(value);
+#endif
+        case NSRoundDown:
+#if CGFLOAT_IS_DOUBLE
+            value = floor(value);
+#else
+            value = floorf(value);
+#endif
+        case NSRoundUp:
+#if CGFLOAT_IS_DOUBLE
+            value = ceil(value);
+#else
+            value = ceilf(value);
+#endif
+        default: break;
+    }
+    return value;
+}
+
 #pragma mark -
 #pragma mark Class
 
@@ -461,7 +487,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 - (void)_deviceOrientationDidChange:(NSNotification *)notification {
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
     if ([self _shouldRotateToOrientation:orientation]) {
-        CGFloat duration = [UIApplication sharedApplication].statusBarOrientationAnimationDuration;
+        NSTimeInterval duration = [UIApplication sharedApplication].statusBarOrientationAnimationDuration;
         [UIView animateWithDuration:duration
                          animations:^{
                              [self _sizeToFitOrientation];
@@ -518,8 +544,8 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
     CGFloat scale = (PFOAuth1FlowDialogIsDevicePad() ? 0.6f : 1.0f);
 
-    CGFloat width = floor(scale * CGRectGetWidth(transformedBounds)) - PFOAuth1FlowDialogScreenInset * 2.0f;
-    CGFloat height = floor(scale * CGRectGetHeight(transformedBounds)) - PFOAuth1FlowDialogScreenInset * 2.0f;
+    CGFloat width = PFTFloatRound((scale * CGRectGetWidth(transformedBounds)) - PFOAuth1FlowDialogScreenInset * 2.0f, NSRoundDown);
+    CGFloat height = PFTFloatRound((scale * CGRectGetHeight(transformedBounds)) - PFOAuth1FlowDialogScreenInset * 2.0f, NSRoundDown);
 
     self.transform = transform;
     self.center = center;
