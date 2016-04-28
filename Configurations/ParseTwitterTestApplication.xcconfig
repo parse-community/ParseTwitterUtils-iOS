@@ -11,6 +11,7 @@
 #include "Shared/Product/Application.xcconfig"
 
 PRODUCT_NAME = ParseTwitterTestApplication
+PRODUCT_BUNDLE_IDENTIFIER = com.parse.twitterutils.testapplication
 
 INFOPLIST_FILE = $(SRCROOT)/Tests/TestApplication/Resources/Info.plist
 
