@@ -10,19 +10,25 @@ env:
     - LANG=en_US.UTF-8
   matrix:
     - TEST_TYPE=iOS
-    - TEST_TYPE=CocoaPods
     - TEST_TYPE=Package
+    - TEST_TYPE=CocoaPods
+    - TEST_TYPE=Carthage
+install:
+- |
+  gem install cocoapods
+  pod install
+  bundle install
 script:
 - |
-    if [ "$TEST_TYPE" = iOS ]; then
-      set -o pipefail
-      xcodebuild test -workspace ParseTwitterUtils.xcworkspace -sdk iphonesimulator -scheme ParseTwitterUtils-iOS -configuration Debug -destination "platform=iOS Simulator,name=iPhone 4s" -destination "platform=iOS Simulator,name=iPhone 6s" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
-    elif [ "$TEST_TYPE" = CocoaPods ]; then
-      pod lib lint ParseTwitterUtils.podspec
-      pod lib lint --use-libraries ParseTwitterUtils.podspec
-    elif [ "$TEST_TYPE" = Package ]; then
-      bundle exec rake package:frameworks
-    fi
+  if [ "$TEST_TYPE" = iOS ]; then
+    set -o pipefail
+    xcodebuild test -workspace ParseTwitterUtils.xcworkspace -sdk iphonesimulator -scheme ParseTwitterUtils-iOS -configuration Debug -destination "platform=iOS Simulator,name=iPhone 4s" -destination "platform=iOS Simulator,name=iPhone 6s" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
+  elif [ "$TEST_TYPE" = Package ]; then
+    bundle exec rake package:frameworks
+  elif [ "$TEST_TYPE" = CocoaPods ]; then
+    pod lib lint ParseTwitterUtils.podspec
+    pod lib lint --use-libraries ParseTwitterUtils.podspec
+  fi
 after_success:
 - |
     if [ "$TEST_TYPE" = iOS ]; then
