@@ -643,7 +643,6 @@ typedef void (^NSURLSessionDataTaskCompletionHandler)(NSData *data, NSURLRespons
 - (void)testDeauthorizeLoggedInAccount {
     id mockedStore = PFStrictClassMock([ACAccountStore class]);
     id mockedURLSession = PFStrictClassMock([NSURLSession class]);
-    id mockedOperationQueue = PFStrictClassMock([NSOperationQueue class]);
 
     id mockedDialog = PFStrictProtocolMock(@protocol(PFOAuth1FlowDialogInterface));
     PF_Twitter *twitter = [[PF_Twitter alloc] initWithAccountStore:mockedStore urlSession:mockedURLSession dialogClass:mockedDialog];
