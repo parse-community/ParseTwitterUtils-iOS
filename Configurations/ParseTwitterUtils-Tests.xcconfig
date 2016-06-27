@@ -12,11 +12,11 @@
 #include "Pods/Target Support Files/Pods-ParseTwitterUtils-Tests/Pods-ParseTwitterUtils-Tests.debug.xcconfig"
 
 PRODUCT_NAME = ParseTwitterUtils-Tests
+IPHONEOS_DEPLOYMENT_TARGET = 8.0
 
 CLANG_ENABLE_MODULES = YES
 
-FRAMEWORK_SEARCH_PATHS = $(inherited) $(BUILT_PRODUCTS_DIR) $(SRCROOT)/Vendor
-LIBRARY_SEARCH_PATHS = $(inherited) $(BUILT_PRODUCTS_DIR)
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(BUILT_PRODUCTS_DIR) $(BUILT_PRODUCTS_DIR)/OCMock $(SRCROOT)/Vendor
 HEADER_SEARCH_PATHS = $(inherited) $(BUILT_PRODUCTS_DIR)
 
 INFOPLIST_FILE = $(PROJECT_DIR)/Tests/Resources/Info.plist

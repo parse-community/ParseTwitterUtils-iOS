@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		06D00BAB1BC78F23005BAA6F /* ParseTwitterUtils.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06D00BAD1BC78F23005BAA6F /* ParseTwitterUtils.strings */; };
 		06D00BB51BC790F3005BAA6F /* PFTwitterLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D00BB41BC790F3005BAA6F /* PFTwitterLocalization.h */; };
-		77DE89F60F51105C769BEC0B /* libPods-ParseTwitterUtils-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F31BB2625FB261014BCD4FB6 /* libPods-ParseTwitterUtils-Tests.a */; };
+		6193428882637F35420543F7 /* Pods_ParseTwitterUtils_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7104508B3E43E48999110ADF /* Pods_ParseTwitterUtils_Tests.framework */; };
 		8135E4951B4B6A0E0092F452 /* PF_Twitter_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8135E48E1B4B6A0E0092F452 /* PF_Twitter_Private.h */; };
 		8135E4961B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8135E48F1B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h */; };
 		8135E4971B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8135E4901B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.m */; };
@@ -76,6 +76,7 @@
 		06DD472B1BD0C64500A43759 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		06DD472C1BD0C64500A43759 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		06DD472D1BD0C64500A43759 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		7104508B3E43E48999110ADF /* Pods_ParseTwitterUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseTwitterUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8135E48E1B4B6A0E0092F452 /* PF_Twitter_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PF_Twitter_Private.h; sourceTree = "<group>"; };
 		8135E48F1B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterAuthenticationProvider.h; sourceTree = "<group>"; };
 		8135E4901B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTwitterAuthenticationProvider.m; sourceTree = "<group>"; };
@@ -113,7 +114,6 @@
 		81CB98E01AB7922C00136FA5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		81D342A01B4C7DA500B6C124 /* ParseTwitterUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseTwitterUtils.h; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseTwitterUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F31BB2625FB261014BCD4FB6 /* libPods-ParseTwitterUtils-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParseTwitterUtils-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51535531B57453700C49F56 /* ParseTwitterUtils-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ParseTwitterUtils-iOS.xcconfig"; sourceTree = "<group>"; };
 		F51535541B57454500C49F56 /* ParseTwitterUtils-Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ParseTwitterUtils-Tests.xcconfig"; sourceTree = "<group>"; };
 		F51535551B57455200C49F56 /* ParseTwitterTestApplication.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ParseTwitterTestApplication.xcconfig; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 				81CB98CC1AB7905D00136FA5 /* ParseTwitterUtils.framework in Frameworks */,
 				81CB98D81AB791FB00136FA5 /* Bolts.framework in Frameworks */,
 				81CB98DB1AB7920E00136FA5 /* Parse.framework in Frameworks */,
-				77DE89F60F51105C769BEC0B /* libPods-ParseTwitterUtils-Tests.a in Frameworks */,
+				6193428882637F35420543F7 /* Pods_ParseTwitterUtils_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +214,7 @@
 				81CB98D21AB7906D00136FA5 /* Tests */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				6ADED1B195979E68C4289C24 /* Pods */,
+				8EF82AB7049F0059A572B973 /* Pods */,
 			);
 			indentWidth = 4;
 			name = Breakpad;
@@ -225,16 +225,9 @@
 			children = (
 				813DFC8F1AB2513D00F25A08 /* User Frameworks */,
 				813DFC8E1AB2513300F25A08 /* System Frameworks */,
-				F31BB2625FB261014BCD4FB6 /* libPods-ParseTwitterUtils-Tests.a */,
+				7104508B3E43E48999110ADF /* Pods_ParseTwitterUtils_Tests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6ADED1B195979E68C4289C24 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		8135E48C1B4B6A0E0092F452 /* ParseTwitterUtils */ = {
@@ -389,6 +382,13 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		8EF82AB7049F0059A572B973 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F51535381B57451200C49F56 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,12 +445,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81CB98D11AB7905D00136FA5 /* Build configuration list for PBXNativeTarget "ParseTwitterUtils-Tests" */;
 			buildPhases = (
-				26730F125F6A472AD0747C6D /* Check Pods Manifest.lock */,
+				DD360F087EBBAE31D0F879FC /* [CP] Check Pods Manifest.lock */,
 				81CB98C21AB7905D00136FA5 /* Sources */,
 				81CB98C31AB7905D00136FA5 /* Frameworks */,
 				81CB98C41AB7905D00136FA5 /* Resources */,
-				4D5B07C5EAC8A041D08E10C6 /* Embed Pods Frameworks */,
-				7A5233E6AC771DC4EC9B4146 /* Copy Pods Resources */,
+				E24FA5F3938C6C3F2C98ADC7 /* [CP] Embed Pods Frameworks */,
+				8B4C3636D1135F55D4AA146C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -548,51 +548,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26730F125F6A472AD0747C6D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4D5B07C5EAC8A041D08E10C6 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseTwitterUtils-Tests/Pods-ParseTwitterUtils-Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A5233E6AC771DC4EC9B4146 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseTwitterUtils-Tests/Pods-ParseTwitterUtils-Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		81B3F2291AC9CA2600A92677 /* Generate Localizable Strings */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -621,6 +576,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ ! -d $SRCROOT/Vendor ]; then\n  mkdir $SRCROOT/Vendor\nfi\n\ncd $SRCROOT/Vendor\n\nif [[ ! -d \"Parse.framework\" || ! -d \"Bolts.framework\" ]]; then\n  ARCHIVE_NAME=Parse-iOS.zip\n\n  LATEST_TAG=$(bash -l -c \"bundle exec pod spec cat Parse\" | grep version | head -n 1 | cut -d '\"' -f 4)\n  ARCHIVE_URL=\"https://github.com/ParsePlatform/Parse-SDK-iOS-OSX/releases/download/${LATEST_TAG}/${ARCHIVE_NAME}\"\n  curl -O -L $ARCHIVE_URL\n\n  unzip $ARCHIVE_NAME\n  rm $ARCHIVE_NAME\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B4C3636D1135F55D4AA146C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseTwitterUtils-Tests/Pods-ParseTwitterUtils-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD360F087EBBAE31D0F879FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E24FA5F3938C6C3F2C98ADC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseTwitterUtils-Tests/Pods-ParseTwitterUtils-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
