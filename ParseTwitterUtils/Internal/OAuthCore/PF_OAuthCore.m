@@ -84,7 +84,9 @@ static NSData *PF_HMAC_SHA1(NSString *data, NSString *key) {
     // combine all parameters
     NSMutableDictionary *parameters = [oAuthAuthorizationParameters mutableCopy];
     [parameters addEntriesFromDictionary:additionalQueryParameters];
-    [parameters addEntriesFromDictionary:additionalBodyParameters];
+    if (additionalBodyParameters) {
+        [parameters addEntriesFromDictionary:additionalBodyParameters];
+    }
 
     NSArray *sortedKeys = [[parameters allKeys] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
         return [obj1 compare:obj2] ?: [parameters[obj1] compare:parameters[obj2]];
