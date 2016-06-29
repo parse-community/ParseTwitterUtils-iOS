@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ParseTwitterUtils'
-  s.version          = '1.10.0'
+  s.version          = '1.11.0'
   s.license          =  { :type => 'Commercial', :text => "See https://www.parse.com/about/terms" }
   s.homepage         = 'https://www.parse.com/'
   s.summary          = 'Parse is a complete technology stack to power your app\'s backend.'
@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
                       'Social'
   s.libraries        = 'z', 'sqlite3'
 
-  s.dependency 'Bolts/Tasks', '~> 1.5'
-  s.dependency 'Parse', '~> 1.9'
+  s.dependency 'Bolts/Tasks', '~> 1.7'
+  s.dependency 'Parse', '~> 1.13'
 end
