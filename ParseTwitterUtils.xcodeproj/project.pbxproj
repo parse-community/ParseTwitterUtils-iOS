@@ -278,17 +278,6 @@
 /* Begin PBXFileReference section */
 		06D00BAE1BC78F29005BAA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ParseTwitterUtils.strings; sourceTree = "<group>"; };
 		06D00BB41BC790F3005BAA6F /* PFTwitterLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterLocalization.h; sourceTree = "<group>"; };
-		06DD47201BD0C64500A43759 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
-		06DD47221BD0C64500A43759 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
-		06DD47231BD0C64500A43759 /* OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OSX.xcconfig; sourceTree = "<group>"; };
-		06DD47241BD0C64500A43759 /* tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = tvOS.xcconfig; sourceTree = "<group>"; };
-		06DD47251BD0C64500A43759 /* watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = watchOS.xcconfig; sourceTree = "<group>"; };
-		06DD47271BD0C64500A43759 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
-		06DD47281BD0C64500A43759 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
-		06DD47291BD0C64500A43759 /* UnitTest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UnitTest.xcconfig; sourceTree = "<group>"; };
-		06DD472B1BD0C64500A43759 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		06DD472C1BD0C64500A43759 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		06DD472D1BD0C64500A43759 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		7104508B3E43E48999110ADF /* Pods_ParseTwitterUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseTwitterUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8135E48E1B4B6A0E0092F452 /* PF_Twitter_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PF_Twitter_Private.h; sourceTree = "<group>"; };
 		8135E48F1B4B6A0E0092F452 /* PFTwitterAuthenticationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterAuthenticationProvider.h; sourceTree = "<group>"; };
@@ -301,6 +290,18 @@
 		813E54A31BB5DDEF00C727E8 /* PFTwitterUtils_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterUtils_Private.h; sourceTree = "<group>"; };
 		813E54A51BB5E52000C727E8 /* PFTwitterPrivateUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTwitterPrivateUtilities.h; sourceTree = "<group>"; };
 		813E54A61BB5E52000C727E8 /* PFTwitterPrivateUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTwitterPrivateUtilities.m; sourceTree = "<group>"; };
+		815462231D37FE6E0069489A /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		815462251D37FE6E0069489A /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		815462261D37FE6E0069489A /* macOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = macOS.xcconfig; sourceTree = "<group>"; };
+		815462271D37FE6E0069489A /* tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = tvOS.xcconfig; sourceTree = "<group>"; };
+		815462281D37FE6E0069489A /* watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = watchOS.xcconfig; sourceTree = "<group>"; };
+		8154622A1D37FE6E0069489A /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		8154622B1D37FE6E0069489A /* DynamicFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DynamicFramework.xcconfig; sourceTree = "<group>"; };
+		8154622C1D37FE6E0069489A /* LogicTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = LogicTests.xcconfig; sourceTree = "<group>"; };
+		8154622D1D37FE6E0069489A /* StaticFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticFramework.xcconfig; sourceTree = "<group>"; };
+		8154622F1D37FE6E0069489A /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		815462301D37FE6E0069489A /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		815462311D37FE6E0069489A /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		815F183E1B4B730E0066E996 /* PFOAuth1FlowDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFOAuth1FlowDialog.h; sourceTree = "<group>"; };
 		815F183F1B4B730E0066E996 /* PFOAuth1FlowDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFOAuth1FlowDialog.m; sourceTree = "<group>"; };
 		81665C6E1BBDE27D00AE923F /* OAuth1FlowDialogTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuth1FlowDialogTests.m; sourceTree = "<group>"; };
@@ -404,48 +405,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		06DD471F1BD0C64500A43759 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				06DD47201BD0C64500A43759 /* Common.xcconfig */,
-				06DD47211BD0C64500A43759 /* Platform */,
-				06DD47261BD0C64500A43759 /* Product */,
-				06DD472A1BD0C64500A43759 /* Project */,
-				06DD472D1BD0C64500A43759 /* Warnings.xcconfig */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		06DD47211BD0C64500A43759 /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				06DD47221BD0C64500A43759 /* iOS.xcconfig */,
-				06DD47231BD0C64500A43759 /* OSX.xcconfig */,
-				06DD47241BD0C64500A43759 /* tvOS.xcconfig */,
-				06DD47251BD0C64500A43759 /* watchOS.xcconfig */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		06DD47261BD0C64500A43759 /* Product */ = {
-			isa = PBXGroup;
-			children = (
-				06DD47271BD0C64500A43759 /* Application.xcconfig */,
-				06DD47281BD0C64500A43759 /* Framework.xcconfig */,
-				06DD47291BD0C64500A43759 /* UnitTest.xcconfig */,
-			);
-			path = Product;
-			sourceTree = "<group>";
-		};
-		06DD472A1BD0C64500A43759 /* Project */ = {
-			isa = PBXGroup;
-			children = (
-				06DD472B1BD0C64500A43759 /* Debug.xcconfig */,
-				06DD472C1BD0C64500A43759 /* Release.xcconfig */,
-			);
-			path = Project;
-			sourceTree = "<group>";
-		};
 		0867D691FE84028FC02AAC07 /* Breakpad */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +495,49 @@
 			);
 			name = Resources;
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		815462221D37FE6E0069489A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				815462231D37FE6E0069489A /* Common.xcconfig */,
+				815462241D37FE6E0069489A /* Platform */,
+				815462291D37FE6E0069489A /* Product */,
+				8154622E1D37FE6E0069489A /* Project */,
+				815462311D37FE6E0069489A /* Warnings.xcconfig */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		815462241D37FE6E0069489A /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				815462251D37FE6E0069489A /* iOS.xcconfig */,
+				815462261D37FE6E0069489A /* macOS.xcconfig */,
+				815462271D37FE6E0069489A /* tvOS.xcconfig */,
+				815462281D37FE6E0069489A /* watchOS.xcconfig */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		815462291D37FE6E0069489A /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				8154622A1D37FE6E0069489A /* Application.xcconfig */,
+				8154622B1D37FE6E0069489A /* DynamicFramework.xcconfig */,
+				8154622C1D37FE6E0069489A /* LogicTests.xcconfig */,
+				8154622D1D37FE6E0069489A /* StaticFramework.xcconfig */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		8154622E1D37FE6E0069489A /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				8154622F1D37FE6E0069489A /* Debug.xcconfig */,
+				815462301D37FE6E0069489A /* Release.xcconfig */,
+			);
+			path = Project;
 			sourceTree = "<group>";
 		};
 		815F183D1B4B730E0066E996 /* Dialog */ = {
@@ -674,11 +676,11 @@
 		F51535381B57451200C49F56 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				06DD471F1BD0C64500A43759 /* Shared */,
 				F51535531B57453700C49F56 /* ParseTwitterUtils-iOS.xcconfig */,
 				81ECACD91D1E14F300FA7673 /* ParseTwitterUtils-iOS-Dynamic.xcconfig */,
 				F51535541B57454500C49F56 /* ParseTwitterUtils-Tests.xcconfig */,
 				F51535551B57455200C49F56 /* ParseTwitterTestApplication.xcconfig */,
+				815462221D37FE6E0069489A /* Shared */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -1237,7 +1239,7 @@
 		};
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06DD472B1BD0C64500A43759 /* Debug.xcconfig */;
+			baseConfigurationReference = 8154622F1D37FE6E0069489A /* Debug.xcconfig */;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1247,7 +1249,7 @@
 		};
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06DD472C1BD0C64500A43759 /* Release.xcconfig */;
+			baseConfigurationReference = 815462301D37FE6E0069489A /* Release.xcconfig */;
 			buildSettings = {
 				PARSE_DIR = "$(PROJECT_DIR)/..";
 			};
