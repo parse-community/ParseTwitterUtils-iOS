@@ -370,8 +370,16 @@
             NSString *requestTokenResponse = [[NSString alloc] initWithData:task.result encoding:NSUTF8StringEncoding];
 
             NSDictionary *requestTokenParsed = [NSURL PF_ab_parseURLQueryString:requestTokenResponse];
-            NSString *requestToken = [requestTokenParsed objectForKey:@"oauth_token"];
-            NSString *requestSecret = [requestTokenParsed objectForKey:@"oauth_token_secret"];
+            NSString *requestToken = requestTokenParsed[@"oauth_token"];
+            NSString *requestSecret = requestTokenParsed[@"oauth_token_secret"];
+
+            // If one of these is missing, then we failed to get a token.
+            if (!requestToken || !requestSecret) {
+                NSDictionary *userInfo = @{ NSLocalizedDescriptionKey: @"Failed to request authorization token from Twitter." };
+                NSError *error = [NSError errorWithDomain:PFParseErrorDomain code:2 userInfo:userInfo];
+                [source setError:error];
+                return;
+            }
 
             // show the webview dialog for auth token
             [[self _showWebViewDialogAsync:requestToken
