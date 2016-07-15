@@ -87,8 +87,8 @@
     PFTwitterAuthenticationProvider *provider = [PFTwitterAuthenticationProvider providerWithTwitter:twitter];
 
     XCTestExpectation *expectation = [self currentSelectorTestExpectation];
-    [[provider authenticateAsync] continueWithBlock:^id(BFTask *task) {
-        NSDictionary *authData = task.result;
+    [[provider authenticateAsync] continueWithBlock:^id(BFTask *t) {
+        NSDictionary *authData = t.result;
         XCTAssertNotNil(authData);
         [self assertValidAuthenticationData:authData forTwitter:twitter];
 
