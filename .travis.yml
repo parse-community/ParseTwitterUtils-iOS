@@ -15,9 +15,9 @@ env:
     - TEST_TYPE=Carthage
 install:
 - |
-  gem install cocoapods
-  pod install
   bundle install
+  pod repo update --silent
+  pod install
 script:
 - |
   if [ "$TEST_TYPE" = iOS ]; then
