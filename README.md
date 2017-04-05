@@ -57,6 +57,8 @@ LICENSE file in the root directory of this source tree. An additional grant
 of patent rights can be found in the PATENTS file in the same directory.
 ```
 
+As of April 5, 2017, Parse, LLC has transferred this code to the parse-community organization, and will no longer be contributing to or distributing this code. 
+
  [parse.com]: https://www.parse.com/products/ios
  [docs]: https://www.parse.com/docs/ios/guide
  [guide]: https://parse.com/docs/ios/guide#users-twitter-users
@@ -86,3 +88,4 @@ of patent rights can be found in the PATENTS file in the same directory.
  [podspec-link]: https://cocoapods.org/pods/ParseTwitterUtils
 
  [platforms-svg]: https://img.shields.io/badge/platform-ios-lightgrey.svg
+
